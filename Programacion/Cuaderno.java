@@ -136,6 +136,7 @@
         boolean digito = Character.isDigit(caracter);              = true o false si es un digito
         boolean espacio = Character.isSpaceChar(caracter);         = true o false si es un espacio
         boolean mayuscula = Character.isUpperCase(caracter);       = true o false si es mayuscula
+        
 
 */
 
