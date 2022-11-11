@@ -1,0 +1,203 @@
+/*
+
+
+
+
+
+
+
+
+ _________________________________________________________________________________
+|  _____________________________________________________________________________  |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |_____________________________________________________________________________| |
+|                                                                                 |
+|  _____________________________________________________________________________  |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |_____________________________________________________________________________| |
+| |                                                                             | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |                           ||                                                | |
+| |_____________________________________________________________________________| |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |                                                                             | |
+| |_____________________________________________________________________________| |
+|_________________________________________________________________________________|
+
+
+
+*/
+
+/** Quedaria mas limpio identificarlo con una clase **/
+
+/*** Reseteo de propiedades ***/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*** BODY ***/
+body{
+    background-color: #1f4677;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 3%;
+}
+
+
+
+
+
+
+/*** NAV ***/
+
+nav {
+    text-align: center;
+}
+nav ul{
+    background-image: url(images/bluePrintPaper.png);
+    padding: 0%;
+    height: 60px;
+}
+nav ul li {
+    display: inline-block;
+    width: 14%;
+    margin-top: 25px;
+
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color:#1f4677;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+/*** HEADER ***/ /*** FOOTER ***/
+header {
+    position: relative;
+    background-color: #d2e1f6;
+    height: 150px;
+    margin-top: 15px;
+
+    padding: 2%;
+}
+header p {
+    border: red solid 1px;
+    width: 60%;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+#imagenHeader{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** ASIDE ***/ /*** SECTION ***/
+aside {
+    float: left;
+    
+    padding-left: 2%;
+
+    border: red solid 1px;
+    height: 500px;
+    width: 29%;    
+    background-color: #ffffff;
+}
+
+section article {
+    border: yellow 1px solid;
+    height: 250px;
+    width: 63%;
+    float: left;
+}
+
+section > ul {
+    border-width: 1px;
+    border-color: navy;
+    border-style: solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** FOOTER ***/
+
+footer section {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    float: left;    
+}
+
+
+
+footer {
+    background-color: #d2e1f6;
+}
