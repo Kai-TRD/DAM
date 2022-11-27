@@ -57,3 +57,44 @@
 
 
 */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+nav {
+    text-align: center;
+}
+nav ul{
+    background-image: url(images/bluePrintPaper.png);
+    padding: 0%;
+    height: 60px;
+}
+nav ul li {
+    display: inline-block;
+    width: 14%;
+    margin-top: 25px;
+
+}
+
+nav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color:#1f4677;
+    font-size: 20px;
+    
+}
+
+
+aside {
+    float: right;
+}
+main {
+    width: 70%;
+    border: 1px red solid;
+    float: left;
+    text-align: center;
+}
+main article {
+    float: left;
+}
