@@ -109,7 +109,7 @@ nav ul li a {
 
 
 
-/*** HEADER ***/ /*** FOOTER ***/
+/*** HEADER ***/ 
 header {
     position: relative;
     background-color: #d2e1f6;
@@ -135,51 +135,52 @@ header p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*** ASIDE ***/ /*** SECTION ***/
-aside {
-    float: left;
-    
-    padding-left: 2%;
-
-    border: red solid 1px;
-    height: 500px;
-    width: 29%;    
-    background-color: #ffffff;
+#texto{
+    height: 100%;
 }
 
-section article {
-    border: yellow 1px solid;
-    height: 250px;
-    width: 63%;
+
+aside{
+    height: 100%;
+}
+
+
+
+aside {
     float: left;
+    padding-left: 2%;
+    width: 30%;    
+    background-color: #ffffff;
+}
+aside section h3 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+aside section {
+    padding-top: 3%;
 }
 
 section > ul {
-    border-width: 1px;
-    border-color: navy;
-    border-style: solid;
+    padding-left: 4%;
 }
 
 
+#texto {
+    background-color: white;
+    width: 68%;
+    float: left;
+}
+section article {
+    padding: 30px 60px 0 60px;
+    position: relative;
+    border: solid 1px red;
+    margin-top: 20px;
+}
 
-
-
-
-
-
-
-
+section article p {
+    padding: 20px 0;
+}
 
 
 
@@ -190,10 +191,8 @@ section > ul {
 /*** FOOTER ***/
 
 footer section {
-    border-width: 1px;
-    border-color: black;
-    border-style: solid;
-    float: left;    
+    float: left;
+    background-color: #ffffff;
 }
 
 

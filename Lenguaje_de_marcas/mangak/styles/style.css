@@ -58,10 +58,14 @@
 
 */
 
+/**Todo**/
 * {
     padding: 0;
     margin: 0;
 }
+
+
+/**Navegación**/
 nav {
     text-align: center;
 }
@@ -86,9 +90,14 @@ nav ul li a {
 }
 
 
+/**Aside**/
 aside {
     float: right;
+    text-align: center;
 }
+
+
+/**Main**/
 main {
     width: 70%;
     border: 1px red solid;
