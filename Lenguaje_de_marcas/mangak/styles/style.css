@@ -54,7 +54,7 @@
 | |__________________________________________________________________________________________________________________________________| |
 |______________________________________________________________________________________________________________________________________|
 
-
+margin: top right botton left;
 
 */
 
@@ -66,8 +66,7 @@
 }
 
 body{
-    /* background: -webkit-linear-gradient(70deg, #d81444, grey);   */
-
+    background: -webkit-linear-gradient(360deg, #d81444 10%, black);  
 }
 
 /**Encabezado**/
@@ -92,7 +91,6 @@ nav ul li {
     display: inline-block;
     width: 7%;
     margin: 10px;
-    background-color: white;
 }
 
 nav ul li a {
@@ -111,30 +109,67 @@ aside {
     text-decoration: none ;
     float: left;
     width: 13%;
-    background-color: aquamarine;
+    border-right: 5px solid black   ;
 }
 aside ul h3{
-    margin: 30px;
+    margin: 30px 0 15px 0 ;
     text-align: center;
+    background-color: white;
 }
 
 aside ul li p{
     position: absolute;
-    top: 50%;
+    top: 35%;
     color: white;
     background-color: rgba(0, 0, 0, 0.581);
     margin: 0 0 0 25%;
-    padding: 0 25%;
+    padding: 0 17%;
 }
 
 aside ul li{
     position: relative;
 }
 
-#top{
-    width: 100%;
-
+#corona{
+    padding: 0 37%;
+    width: 60px;
 }
+
+#top{
+    width: 80%;
+    border-radius: 8px;
+    margin: 0 10%;
+    height: 60px;
+    object-fit: cover;
+    border: 3px solid #d81444;
+}
+
+    #top1{
+        width: 80%;
+        border-radius: 8px;
+        margin: 0 10%;
+        height: 60px;
+        object-fit: cover;
+        border: 3px solid #ffbf00;
+    }
+    
+    #top2{
+        width: 80%;
+        border-radius: 8px;
+        margin: 0 10%;
+        height: 60px;
+        object-fit: cover;
+        border: 3px solid #e3e4e5;
+    }
+    
+    #top3{
+        width: 80%;
+        border-radius: 8px;
+        margin: 0 10%;
+        height: 60px;
+        object-fit: cover;
+        border: 3px solid #ff8001;
+    }
 
 
 
@@ -144,7 +179,6 @@ main {
     float: left;
     width: 82%;
     margin-top: 50px;
-    background-color: white;
     padding: 19px;
     padding-right: 10px;
 }
