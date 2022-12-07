@@ -100,7 +100,6 @@ nav ul li a {
     text-decoration: none;
     color:black;
     font-size: 20px;
-    
 }
 /* object-fit: cover; */
 
@@ -118,16 +117,23 @@ aside ul h3{
     margin: 30px;
     text-align: center;
 }
-aside ul li a {
-    text-decoration: none;
-    color: black;
-    margin-left: 90px ;
-    
+
+aside ul li p{
+    position: absolute;
+    top: 50%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.581);
+    margin: 0 0 0 25%;
+    padding: 0 25%;
 }
 
+aside ul li{
+    position: relative;
+}
 
-aside ul li img {
-    width: 100px;
+#top{
+    width: 100%;
+
 }
 
 
