@@ -62,6 +62,7 @@ margin: top right botton left;
 * {
     padding: 0;
     margin: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -115,6 +116,11 @@ aside {
     width: 13%;
     border-right: 5px solid white;
     height: 100%;
+    margin-left: 30px;
+}
+
+aside ul{
+    margin: 0 0 20px 0;
 }
 
 aside ul h3{
