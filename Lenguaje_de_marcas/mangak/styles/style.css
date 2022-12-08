@@ -56,6 +56,8 @@
 
 margin: top right botton left;
 
+    ++FUSION++
+    https://lenguajecss.com/css/efectos/modos-de-fusion/
 */
 
 /**Todo**/
@@ -73,8 +75,19 @@ body{
 /**Encabezado**/
 header{
     background-color: #d81444;
-    padding-bottom: 100px;
+    padding-bottom: 200px;
+    position: relative;
 }
+
+header h1{
+    position: absolute;
+}
+
+header img{
+    position: absolute;
+    mix-blend-mode: multiply;
+}
+
 header h1{
     padding: 25px;
     font-size: 50px;
@@ -91,10 +104,10 @@ nav ul{
 nav ul li {
     display: inline-block;
     width: 7%;
-    margin: 10px;
-    padding: 12px;
+    margin: 5px;
+    padding: 5px;
     background-color: white;
-    border-radius: 7px;
+    border-radius: 7px; 
 }
 
 nav ul li a {
