@@ -80,43 +80,26 @@ margin: top right botton left;
 .neonText {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
-  }
+}
   
-  h1 {
-    font-size: 4.2rem;    
-  }
-  
-  /* Flickering animation */
-  @keyframes flicker {  
-      
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-  
-            text-shadow:
-            0 0 4px #fff,
-            0 0 19px #fff,
-            0 0 40px rgb(255, 0, 98),
-            0 0 80px rgb(255, 0, 98),
-            0 0 90px rgb(255, 0, 98),
-            0 0 100px rgb(255, 0, 98),
-            0 0 150px rgb(255, 0, 98);
-    
+
+/* Flickering animation */
+@keyframes flicker {      
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+    0 0 4px #fff,
+    0 0 19px #fff,
+    0 0 40px rgb(255, 0, 98),
+    0 0 80px rgb(255, 0, 98),
+    0 0 90px rgb(255, 0, 98),
+    0 0 100px rgb(255, 0, 98),
+    0 0 150px rgb(255, 0, 98);
     }
     
     20%, 24%, 55% {        
         text-shadow: none;
     }    
-  }
-
-
-
-
-
-
-
-
-
-
-
+}
 
 
 
@@ -151,6 +134,11 @@ header h1{
         color: white;
         font-style: italic  ;
         margin: 115px 0 5px 40px;
+    }
+    header img{
+        position: absolute;
+        
+
     }
 
 
