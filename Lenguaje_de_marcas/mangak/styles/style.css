@@ -108,7 +108,15 @@ margin: top right botton left;
 
 
 body{
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(216,20,68,1) 100%);}
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(216,20,68,1) 100%);
+}
+
+#arriba{
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
 
 /**Encabezado**/
 header{
@@ -124,7 +132,7 @@ header{
 header h1{
     position: absolute;
     color: white;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(255, 255, 255, 0) 60%);
+    background: linear-gradient(90deg, rgb(0, 0, 0) 30%, rgba(255, 255, 255, 0) 60%);
     height: 90px;
     padding: 60px 800px 0 40px;
     font-size: 300%;
@@ -138,7 +146,6 @@ header h1{
     header img{
         position: absolute;
         
-
     }
 
 
