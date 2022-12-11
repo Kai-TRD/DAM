@@ -273,7 +273,7 @@ aside ul li{
 main {
     float: left;
     width: 82%;
-    margin-top: 50px;
+    margin-top: 25px;
     padding: 19px;
     padding-right: 10px;
 }
@@ -336,9 +336,76 @@ main article h4{
 
 
 
-/**Seccion**/
-section{
+/**FOOTER**/
+footer{
+    color: white;
     float: left;
-    border: solid blue 1px;
     width: 100%;
+    background-color: black;
+    position: relative;
+    height: 250px;
 }
+
+footer article a{
+    text-decoration: none;
+    color: white;
+}
+    footer article a:hover{
+        color: #d81444;
+    }
+
+footer article h4{
+    border-bottom: white 3px solid;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+footer article ul li{
+    margin-bottom: 10px;
+}
+
+
+    #website{
+        margin-top: 2%;
+        position: absolute;
+        text-align: center;
+        left: 20%;
+    
+    }
+
+    #explorar{
+        margin-top: 2%;
+        position: absolute;
+        text-align: center;
+        left: 34%;
+    }
+
+    #sigenos{
+        margin-top: 2%;
+        position: absolute;
+        text-align: center;
+        left: 45%;
+    }
+
+        #sigenos img{
+            height: 50px;
+            width: 50px;
+        }
+
+    #contenido{
+        margin-top: 2%;
+        position: absolute;
+        text-align: justify;
+        width: 20%;
+        right: 15%;
+    }
+        #contenido p{
+            margin-bottom: 20px;
+        }
+
+    #copyright{
+        bottom: 5px;
+        left: 10px;
+        font-size: 90%;
+        position: absolute;
+        text-align: center;
+    }
