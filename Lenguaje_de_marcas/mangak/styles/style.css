@@ -116,13 +116,16 @@ body{
     right: 5px;
     bottom: 5px;
 }
-
+    #arriba img{
+        height: 40px;
+        width: 40px;   
+    }
 
 /**Encabezado**/
 header{
     padding-bottom: 150px;
     position: relative;
-    background-image: url("../images/banner3.png");
+    background-image: url("../images/banners/banner3.png");
     
     mix-blend-mode: lighten;
 }
@@ -386,14 +389,14 @@ footer article ul li{
         left: 34%;
     }
 
-    #sigenos{
+    #siguenos{
         margin-top: 2%;
         position: absolute;
         text-align: center;
         left: 45%;
     }
 
-        #sigenos img{
+        #siguenos img{
             height: 50px;
             width: 50px;
         }
@@ -411,7 +414,7 @@ footer article ul li{
 
     #copyright{
         bottom: 5px;
-        left: 10px;
+        right: 10px;
         font-size: 90%;
         position: absolute;
         text-align: center;
