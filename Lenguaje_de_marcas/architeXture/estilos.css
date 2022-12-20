@@ -93,7 +93,7 @@ nav ul{
 nav ul li {
     display: inline-block;
     width: 14%;
-    margin-top: 25px;
+    margin-top: 10px;
 
 }
 
@@ -101,7 +101,7 @@ nav ul li a {
     font-weight: bold;
     text-decoration: none;
     color:#1f4677;
-    font-size: 20px;
+    font-size: 35px;
     
 }
 
