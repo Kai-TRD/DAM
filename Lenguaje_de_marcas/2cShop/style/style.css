@@ -9,27 +9,88 @@ body{
     background-color: #ff7b2d;
 }
 
-header h1{
-    color: white;
-    width: 100%;
-}
-header ul{
-    background-color: #2e2e2e;
-    padding: 12px 50px 32px 10px;
-    margin: 20px 0 10px 0;
-    border-radius: 10px;
-}
+
+    /* HEADER */
+        header h1{
+            color: white;
+            width: 100%;
+        }
+        header ul{
+            background-color: #2e2e2e;
+            padding: 12px 50px 32px 10px;
+            margin: 20px 0 10px 0;
+            border-radius: 10px;
+        }
 
 
-header ul li{
-    float: left;
-    list-style: none;
-    margin-right: 3%;
-}
+        header ul li{
+            float: left;
+            list-style: none;
+            margin-right: 3%;
+        }
 
-header ul li a{
+        header ul li a{
 
-    text-decoration: none;
-    color: #b6e9ff;
-    font-weight: 700;
-}
+            text-decoration: none;
+            color: #b6e9ff;
+            font-weight: 700;
+        }
+
+        
+    /* TOP SECTION */
+        #topSection{
+            padding: 40px 40px 40px 40px;
+            border-radius: 10px;
+            background: linear-gradient(rgb(178, 250, 255), 20% , #47bfe6 80%, rgb(178, 250, 255));
+            margin-bottom: 10px;
+        }
+        #topSection h3{
+            font-weight: 100;
+            padding: 0 0 30px 0;
+        }
+
+        #topSection p{
+            font-size: 14px;
+            color: rgb(74, 74, 74);
+        }
+
+    
+    /* ASIDE */
+        aside{
+            float: left;
+            width: 25%;
+        }
+
+        aside section{
+            padding: 7px;
+            background-color: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        aside h3{
+            color: black;
+            font-size: 16px;
+            background-color: #ade4ea;
+            border-radius: 10px;
+            padding: 5px;
+        }
+
+        aside ul{
+            padding: 0 0 0 40px;
+        }
+        aside li{
+            color: #2dc2e0;
+            padding-top: 30px;
+            border-bottom: dotted 1px #41b6c3;
+        }
+
+        aside a{
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+        }
+
+        aside li:first-letter {
+            font-size: 15px;
+        }
