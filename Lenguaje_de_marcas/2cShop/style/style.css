@@ -1,9 +1,9 @@
 
 
+/* 2cShop index Style Sheet */
 
 
-
-    /* ALL */
+    /* ----ALL---- */
     *{
         padding: 0;
         margin: 0;
@@ -11,14 +11,14 @@
 
     }
 
-    /* BODY */
+    /* ----BODY---- */
     body{
         margin: 10px 20% 10px 20%;
         background-color: #ff7b2d;
     }
 
 
-    /* HEADER */
+    /* ----HEADER---- */
     header h1{
         color: white;
         width: 100%;
@@ -43,17 +43,25 @@
         font-weight: 700;
     }
 
+        header ul li a:hover{
+            border-bottom: solid white 3px;
+        }
+
         
-    /* TOP SECTION */
+    /* ----TOP SECTION---- */
     #topSection{
         padding: 40px 40px 40px 40px;
         border-radius: 10px;
-        /* background: linear-gradient(rgb(178, 250, 255), 20% , #47bfe6 80%, rgb(178, 250, 255)); */
-        background-color: #47bfe6;
 
-        box-shadow: 
-            inset 0px 20px 40px -10px white,
-            inset 0px -20px 40px -10px white; 
+        /* top section background con lineal-gradient */
+        background: linear-gradient(rgb(178, 250, 255), 20% , #47bfe6 80%, rgb(178, 250, 255));
+
+        /* top section background con box-shadow */
+        /* 
+            background-color: #47bfe6;
+            box-shadow: 
+                inset 0px 20px 40px -10px white,
+                inset 0px -20px 40px -10px white;  */
         
         margin-bottom: 10px;
     }
@@ -68,7 +76,7 @@
     }
 
     
-    /* ASIDE */
+    /* ----ASIDE---- */
     aside{
         float: left;
         width: 25%;
@@ -103,13 +111,14 @@
         text-decoration: none;
         color: black;
         font-size: 14px;
+        text-transform: uppercase;
     }
 
     aside li::first-letter {
         font-size: 20px;
     }
 
-    /* MAIN */
+    /* ----MAIN---- */
     main{
         float: left;
         width: 74%;
@@ -153,11 +162,11 @@
         margin: 8px 0 0 16px;
     }
 
-    #buyNow{
+    .buyNow{
         margin: 30px 0 20px 0;
     }
 
-    #section2 p{
+    section p{
         font-size: 14.5px;
         margin: 30px 30px 10px 30px;
     }
@@ -176,7 +185,7 @@
     }
 
 
-    /* FOOTER */
+    /* ----FOOTER---- */
     footer{
         position: relative;
         margin: 5px 0 20px 0;
