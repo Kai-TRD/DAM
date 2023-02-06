@@ -33,37 +33,52 @@
             <img  src="images/iconos/flechaArriba.png" alt="">
         </a>
 
-            <!-- Barra de navegacion -->
-            <nav>
-                <ul>
-                    <li><a href = "">Populares</a></li>
-                    <li><a href = "">Géneros</a></li>
-                    <li><a href = "">Nuevos</a></li>
-                    <li><a href = "">Noticias </a></li>
-                    <li><a href = "">Mi Biblioteca </a></li>
-                </ul>
-            </nav>
+        <!-- Barra de navegacion -->
+        <nav id="mainNav">
+            <ul>
+                <li><a href = "">Populares</a></li>
+                <li><a href = "">Géneros</a></li>
+                <li><a href = "">Nuevos</a></li>
+                <li><a href = "">Noticias </a></li>
+                <li><a href = "">Mi Biblioteca </a></li>
+                
+                <!-- Barra de busqueda -->
+                <div id="search">
+                    <input type="search" placeholder="Search...">
+                    <img src="images/iconos/lupa.png" alt="">
+                </div>
+            </ul>
+
+            
+            
+        </nav>
 
 
            <!-- LATERAL DISPLAY -->
-           <nav id="cuentaLateral">
+        <nav id="cuentaLateral">
+            
             <input type="checkbox" id="check">
+            
             <ul>
                 <!-- 3 rayas del laterañ display -->
                 <label for="check" class="checkbtn">
                     <i class="fas fa-bars"></i>
                 </label>
-            <!-- Contenido/EDITAR -->
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Contacto</a></li>
-            
+
+                <!-- Contenido/EDITAR -->
+
+                <img class="avatar" src="images/iconos/userAvatar.jpg" alt="">
+                
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">User Setings</a></li>
+                <li><a href="#">Logout</a></li>
             </ul>
-                </nav>
 
+        </nav>
 
+        <!-- ASIDE -->
         <aside>
             <!-- TOP SEMANAL -->
             <ul>
