@@ -12,21 +12,23 @@
     </head>
 
     <body>
+
         <!-- Titulo / header -->
         <header>
             <h1 id="inicioPagina" class="neonText">MANGAK</h1>
             <p>"Just relax and read "</p>
 
             <!-- 3 rayas del laterañ display -->
-            <label for="check" class="checkbtn">
+            <label id="linesUp" for="check" class="checkbtn">
                 <i class="fas fa-bars"></i>
             </label>
 
             <!-- Desgradado debajo del label -->
             <div></div>
-
-        
         </header>
+
+        <!-- cat -->
+        <!-- <img id="cat" src="https://raw.githubusercontent.com/gist/brudnak/aba00c9a1c92d226f68e8ad8ba1e0a40/raw/e1e4a92f6072d15014f19aa8903d24a1ac0c41a4/nyan-cat.gif" alt=""> -->
 
         <!-- Icono para ir hacia arriba -->
         <a id="arriba" href="#inicioPagina">
@@ -36,25 +38,25 @@
         <!-- Barra de navegacion -->
         <nav id="mainNav">
             <ul>
-                <li><a href = "">Populares</a></li>
-                <li><a href = "">Géneros</a></li>
-                <li><a href = "">Nuevos</a></li>
-                <li><a href = "">Noticias </a></li>
-                <li><a href = "">Mi Biblioteca </a></li>
-                
-                <!-- Barra de busqueda -->
-                <!-- <div id="search">
-                    <input type="search" placeholder="Search...">
-                    <img src="images/iconos/lupa.png" alt="">
-                </div> -->
+                <li><a href="#">Populares</a></li>
+                <li><a href="#">Géneros</a></li>
+                <li><a href="#">Nuevos</a></li>
+                <li><a href="#">Noticias </a></li>
+                <li><a href="#">Mi Biblioteca </a></li>
             </ul>
+            
+            <!-- Barra de busqueda -->
+            <div id="search">
+                <input id="searchBar" type="search" placeholder="Search...">
+                <label for="searchBar">
+                    <img src="images/iconos/lupa.png" alt="">
+                </label>
 
-            
-            
+            </div>
         </nav>
 
 
-           <!-- LATERAL DISPLAY -->
+        <!-- LATERAL DISPLAY -->
         <nav id="cuentaLateral">
             
             <input type="checkbox" id="check">
@@ -67,14 +69,20 @@
 
                 <!-- Contenido/EDITAR -->
 
-                <img class="avatar" src="images/iconos/userAvatar.jpg" alt="">
-                
+                    <!-- Avatar -->
+                <section class="avatar">
+                    <p>Kai</p>
+                    <img src="images/iconos/userAvatar.jpg" alt="">
+                </section>
+
                 <li><a href="#">Perfil</a></li>
                 <li><a href="#">Biblioteca</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">User Setings</a></li>
-                <li><a href="#">Logout</a></li>
+                <li id="logout"><a href="#">Logout</a></li>
             </ul>
+
+
 
         </nav>
 
@@ -438,9 +446,6 @@
             <!-- [1][2][3]... -->
 
         </main>
-
-        <!-- actSectionNxt -->
-
     </body>
 
     <!-- Footer pag sim -->
@@ -479,7 +484,7 @@
             </p>
         </article>
         <!-- copyright -->
-        <article id="copyright">© 2022 MangaK</article>
+        <article id="copyright">&copy; 2022 MangaK</article>
 
     </footer>
 
