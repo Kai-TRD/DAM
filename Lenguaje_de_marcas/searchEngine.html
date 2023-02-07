@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador( ͡° ͜ʖ ͡°)</title>
+</head>
+<body style="text-align: center; margin-top: 16%; background-color: cornsilk;">
+    <form method="get" action="https://www.google.com/search" target="_blank">
+        <input class="entrada" type="search" name="q" placeholder="Término a buscar" required=""><br>
+        <b>Tipos de archivos:</b><br> 
+            <select class="select" name="as_filetype">
+               <option label="Todos" value="" selected="selected"></option>
+               <option value="ppt">PowerPoint</option>
+               <option value="pdf">PDF</option>
+               <option value="jpg">jpg</option>
+            </select><br>
+        <b>Sitios web:</b><br> 
+            <select class="select" name="as_sitesearch">
+               <option label="Todos" value="" selected="selected"></option>
+               <option value="norfipc.com">NorfiPC.com</option>
+               <option value="es.wikipedia.org/">Wikipedia</option>
+               <option value="github.com">Github</option>
+            </select><br>
+        <input type="hidden" name="num" value="50"> 
+        <input class="botb" type="submit" value="Buscar">    
+        </form>
+        <input type="range" value="">
+</body>
+</html>
