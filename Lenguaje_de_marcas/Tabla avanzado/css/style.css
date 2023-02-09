@@ -1,0 +1,25 @@
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    border-collapse: collapse;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+tr:nth-child(even) {background-color: #FFFFCC;}
+
+.fila1{
+    background-color: #b7b7b7;
+}
+
+.col1{
+    background-color: #E6F3FF;
+    text-align: left;
+}
+
+table tr:hover {
+background:#FFFF66;
+}
