@@ -146,7 +146,7 @@ header{
     padding-bottom: 150px;
     position: relative;
     background-image: url("../images/banners/banner3.png");
-    
+    /* transform: scale(100%); */
     mix-blend-mode: lighten;
 }
 
@@ -590,29 +590,32 @@ footer article ul li{
 }
 
 
-/* ----------------------TABLET---------------------- */
+/* ----------------------TABLET / PORTATIL---------------------- */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1440px) {
 
+    /* body{
+        border-right: white solid 40px;
+    } */
     /**Header Tablet**/
-    header{
-        padding-bottom: 100px;
-        overflow-y:hidden;
-    }
-
-    header h1{
-        font-size: 35px;
-        background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 70%);
-        padding-top: 30px ;
-
-    }
-        header p {  
-            font-size: small;
-            margin-top: 70px;
+        header{
+            padding-bottom: 100px;
+            overflow-y:hidden;
         }
-    header div{
-        padding-bottom: 100px;
-    }
+
+        header h1{
+            font-size: 35px;
+            background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 70%);
+            padding-top: 30px ;
+
+        }
+            header p {  
+                font-size: small;
+                margin-top: 70px;
+            }
+        header div{
+            padding-bottom: 100px;
+        }
 
 
     /**Navegación Tablet**/
@@ -669,9 +672,9 @@ footer article ul li{
 
 
     /* AVATAR */
-    .avatar{
-        margin-top: 40px;
-    }
+        .avatar{
+            margin-top: 40px;
+        }
         .avatar img{
             height: 100px;
             margin: 50px 0 30px 70px;
@@ -695,21 +698,12 @@ footer article ul li{
     /* LATERAL DISPLAY */
         label i{
             font-size: 130%;
-            margin: 80px 10px 0 0;
+            margin: 80px 5px 0 0;
         }
 
-
-
-
         #cuentaLateral ul{
-            position: fixed;
             width: 30%;
-            height: 110%;
-            right: -100%;
             margin-top: -220px;
-            transition: all .5s;
-            background-color: rgba(62, 62, 62, 0.9);
-            z-index: 1;
         }
         #cuentaLateral ul li{
             font-size: 12px;
@@ -736,44 +730,86 @@ footer article ul li{
     }
 
     /**Aside Tablet**/
-    aside{
-        margin: 0;
-    }
-    aside ul h3{
-        margin: 0 0 15px 0;
-    }
-    #corona{
-        padding: 0 0 0 20px;
-    }
+        aside{
+            margin: 0;
+        }
+        aside ul h3{
+            margin: 0 0 15px 0;
+        }
+        #corona{
+            padding: 0 0 0 20px;
+        }
 
-    #textoTop{
-        font-size: 12px;
-        width: 55%;
-        padding: 0 0 0 25px;
-        margin: 24px 0 0 12px;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+        #textoTop{
+            font-size: 12px;
+            width: 55%;
+            padding: 0 0 0 25px;
+            margin: 24px 0 0 12px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
 
-    main{
-        margin: 0;
-        padding: 10px 0 0 20px;
-        text-align: center;
-    }
 
-    main article{
-        height: 195px;
-        width: 145px;
-        padding: 8px 0 0 0;
-        overflow-y:hidden;
-        margin: 0 10px 20px 0;
-    }
+    /* Main Tablet */
+        main{
+            margin: 0;
+            padding: 10px 0 0 20px;
+            text-align: center;
+            /* border-right: #fff solid 1px; */
+        }
 
-    main article h4{
-        width: 145px;
-        position: absolute;
-        padding: 10px 0;
-        text-align: center;
-        font-size: 12px;
-    }
+        main article{
+            height: 195px;
+            width: 145px;
+            padding: 8px 0 0 0;
+            overflow-y:hidden;
+            margin: 0 10px 20px 0;
+        }
+
+        main article h4{
+            width: 145px;
+            font-size: 12px;
+        }
+
+    /**Footer Tablet**/
+        footer{
+            height: 250px;
+        }
+
+        footer article ul li{
+            margin-bottom: 12px;
+        }
+        
+            #website{
+                font-size: 80%;
+                left: 5%;
+            }
+
+            #explorar{
+                font-size: 80%;
+                left: 28%;
+            }
+
+            #siguenos{
+                font-size: 80%;
+                left: 43%;
+            }
+
+                #siguenos img{
+                    height: 50px;
+                    width: 50px;
+                }
+
+            #contenido{
+                font-size: 80%;
+                left: 75%;
+            }
+                #contenido p{
+                    margin-bottom: 20px;
+                }
+
+        #copyright{ 
+            font-size: 60%;
+        }
+    
 }
