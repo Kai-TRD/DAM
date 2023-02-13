@@ -60,7 +60,17 @@
     ++NEON++
     https://css-tricks.com/how-to-create-neon-text-with-css/
     https://freefrontend.com/css-glow-text-effects/
+
+    https://aukera.es/blog/diseno-responsive/
+    
+    @media (max-width:320px) = cuando el ancho es menor a 320
+    @media (min-width:768px) = cuando el ancho es mayor a 768
 */
+
+
+
+
+
 
 
 
@@ -305,15 +315,16 @@ label i:hover {
 
 }
 
-/* Log put bottom */
-#logout{
-    position: relative;
-    top: 35%;
-}
+    /* Log put bottom */
+    #logout{
+        position: relative;
+        top: 35%;
+    }
 
-#logout:hover{
-    background-color: #d81444;
-}
+    #logout:hover{
+        background-color: #d81444;
+    }
+    
 #cuentaLateral{
     float: left;
     left: 100%;
@@ -576,4 +587,193 @@ footer article ul li{
     font-size: 90%;
     position: absolute;
     text-align: center;
+}
+
+
+/* ----------------------TABLET---------------------- */
+
+@media only screen and (max-width: 768px) {
+
+    /**Header Tablet**/
+    header{
+        padding-bottom: 100px;
+        overflow-y:hidden;
+    }
+
+    header h1{
+        font-size: 35px;
+        background: linear-gradient(90deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 70%);
+        padding-top: 30px ;
+
+    }
+        header p {  
+            font-size: small;
+            margin-top: 70px;
+        }
+    header div{
+        padding-bottom: 100px;
+    }
+
+
+    /**Navegación Tablet**/
+        #mainNav {
+            text-align: center;
+        }
+        #mainNav ul{
+            background-color: rgb(0, 0, 0);
+            height: 70px;
+        }
+        #mainNav ul li {
+            width: 75px;
+            display: inline-block;
+            margin: 8px 5px 0 5px;    
+        }
+
+        #mainNav ul li a {
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            font-size: 12px;
+        
+        }
+
+    /* BARRA DE BUSQUEDA */
+        #search{
+            position: absolute; 
+            right: 33%;
+            top: 135px;
+        }
+
+        #search input{
+            height: 20px;
+            width: 200px;
+            padding: 3px 0 0 10px;
+            font-size: 15px;
+            border-radius: 100px;
+            border: white solid 1px;
+        }
+
+        #search input:hover{
+            border: solid 1px #d81444;
+            /* width: 200px; */
+            /* transition: 0.5s; */
+        }
+
+        #search img{
+            position: relative;
+            height: 20px;
+            bottom: -3px;
+            cursor: pointer;
+        }
+
+
+
+    /* AVATAR */
+    .avatar{
+        margin-top: 40px;
+    }
+        .avatar img{
+            height: 100px;
+            margin: 50px 0 30px 70px;
+        }
+
+        .avatar p{
+            font-weight: 600;
+            top: 200px;
+            width: 100%;
+            text-align: center;
+            padding: 5px 0 5px 0;
+        }
+
+    /* Logout bottom */
+        #logout{
+            top: 32%;
+        }
+
+
+
+    /* LATERAL DISPLAY */
+        label i{
+            font-size: 130%;
+            margin: 80px 10px 0 0;
+        }
+
+
+
+
+        #cuentaLateral ul{
+            position: fixed;
+            width: 30%;
+            height: 110%;
+            right: -100%;
+            margin-top: -220px;
+            transition: all .5s;
+            background-color: rgba(62, 62, 62, 0.9);
+            z-index: 1;
+        }
+        #cuentaLateral ul li{
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            clear: both;
+        }
+
+        #cuentaLateral ul li:hover{
+            background-color:rgb(41, 41, 41);
+        }
+            /* Content */
+
+        #cuentaLateral ul li a{
+            color: white;
+            font-size: 110%;
+            width: 100%;
+            font-weight: 900;
+            text-decoration: none;
+        }
+
+    #check:checked ~ ul{
+        right:0;
+    }
+
+    /**Aside Tablet**/
+    aside{
+        margin: 0;
+    }
+    aside ul h3{
+        margin: 0 0 15px 0;
+    }
+    #corona{
+        padding: 0 0 0 20px;
+    }
+
+    #textoTop{
+        font-size: 12px;
+        width: 55%;
+        padding: 0 0 0 25px;
+        margin: 24px 0 0 12px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    main{
+        margin: 0;
+        padding: 10px 0 0 20px;
+        text-align: center;
+    }
+
+    main article{
+        height: 195px;
+        width: 145px;
+        padding: 8px 0 0 0;
+        overflow-y:hidden;
+        margin: 0 10px 20px 0;
+    }
+
+    main article h4{
+        width: 145px;
+        position: absolute;
+        padding: 10px 0;
+        text-align: center;
+        font-size: 12px;
+    }
 }
