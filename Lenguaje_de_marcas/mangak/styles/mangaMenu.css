@@ -1,0 +1,377 @@
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: url(https://www.teleadhesivo.com/es/img/fomb028-png/folder/products-detalle-png/fotomurales-textura-ladrillo-munich.png);
+}
+.neontext {
+    color: rgb(255, 255, 255);
+    text-shadow:
+    0 0 2px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 10px rgb(255, 0, 98),
+    0 0 12px rgb(255, 0, 98),
+    0 0 25px rgb(255, 0, 98),
+    0 0 30px rgb(255, 0, 98);
+}
+/* body{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(216,20,68,1) 100%);
+} */
+header{
+    position: static;
+    top: 0;
+
+}
+
+header h3{
+    font-size: 30px;
+    padding: 15px 20px 10px 20px;
+    position: absolute;
+    top: 0px;
+}
+
+/**Navegación**/
+#mainNav {
+    text-align: center;
+}
+
+#mainNav ul{
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+}
+
+#mainNav ul li {
+    display: inline-block;
+    width: 10%;
+    margin: 15px 5px 5px 5px;
+    padding: 5px;
+    /* background-color: white; */
+    border-radius: 7px; 
+}
+    /* #mainNav ul li:hover {
+        display: inline-block;
+        width: 7%;
+        margin: 5px;
+        padding: 5px;
+        background-color: #ab3e59;
+        border-radius: 7px; 
+    } */
+
+#mainNav ul li a {
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+#mainNav ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:
+    0 0 2px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 10px rgb(255, 0, 98),
+    0 0 12px rgb(255, 0, 98),
+    0 0 25px rgb(255, 0, 98),
+    0 0 30px rgb(255, 0, 98);
+}
+
+/* BARRA DE BUSQUEDA */
+#search{
+    position: absolute; 
+    right: 200px;
+    top: 20px;
+}
+
+#search input{
+    height: 25px;
+    width: 180px;
+    padding: 3px 0 0 10px;
+    font-size: 15px;
+    border-radius: 100px;
+    border: white solid 1px;
+}
+
+#search input:hover{
+    border: solid 1px #d81444;
+}
+
+#search img{
+    position: relative;
+    height: 20px;
+    bottom: -3px;
+    cursor: pointer;
+}
+
+/* AVATAR */
+.avatar img{
+    height: 220px;
+    border-radius: 100%;
+    margin: 50px 0 30px 90px;
+    float: left;
+    box-shadow:
+    0 0 2px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 15px rgb(255, 0, 98),
+    0 0 12px rgb(255, 0, 98),
+    0 0 25px rgb(255, 0, 98),
+    0 0 40px rgb(255, 0, 98);
+    pointer-events: none;
+}
+
+.avatar p{
+    color: white;
+    position: absolute;
+    font-weight: 600;
+    font-size: large;
+    left: 0;
+    top: 230px;
+    padding: 10px 100% 10px 20px;
+    background-color: rgba(0, 0, 0, 0.553);
+    z-index: -1;
+
+}
+
+
+/* LATERAL DISPLAY */
+
+label i{
+    padding: 5px;
+}
+
+label i{
+    font-size: 180%;
+    color: white;
+    position: fixed;
+    right: 0;
+    margin: 17px 10px 0 0;
+    cursor: pointer;
+    padding:  5px 5px 5px 5px;
+    size-adjust: 20%;
+    z-index: 3;
+}
+
+label i:hover {
+    color: #d81444;
+}
+#check{
+    display: none;
+}
+
+#LinesUp{
+    color: red;
+    z-index: 4;
+
+}
+
+    /* Log put bottom */
+    #logout{
+        position: relative;
+        top: 33%;
+    }
+
+    #logout:hover{
+        background-color: #d81444;
+    }
+    
+#cuentaLateral{
+    float: left;
+    left: 100%;
+    
+}
+    #cuentaLateral ul{
+        position: fixed;
+        width: 20%;
+        height: 110%;
+        right: -100%;
+        margin-top: -60px;
+        transition: all .5s;
+        background-color: rgba(62, 62, 62, 0.9);
+        z-index: 1;
+    }
+    #cuentaLateral ul li{
+        display: block;
+        margin: 20px 20px 20px 20px;
+        padding: 10px 0 10px 0;
+        background-color:rgb(0, 0, 0);
+        border-radius: 10px;
+        text-align: center;
+        clear: both;
+    }
+
+    #cuentaLateral ul li:hover{
+        background-color:rgb(41, 41, 41);
+    }
+        /* Content */
+
+    #cuentaLateral ul li a{
+        color: white;
+        font-size: 110%;
+        width: 100%;
+        font-weight: 900;
+        text-decoration: none;
+    }
+
+#check:checked ~ ul{
+    right:0;
+}
+
+
+
+
+
+
+
+/* Main */
+
+main{
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+#portada{
+    height: 600px;
+    margin: 0 5px 0 90px;
+    width: 30%;
+    background-color: bisque;
+}
+#portada h2{
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#portada img{
+    padding: 100px 0 0 25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**FOOTER**/
+footer{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    height: 250px;
+}
+
+footer article a{
+    text-decoration: none;
+    color: white;
+}
+    footer article a:hover{
+        color: #d81444;
+    }
+
+footer article h4{
+    border-bottom: white 3px solid;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+footer article ul li{
+    margin-bottom: 10px;
+}
+
+
+    #website{
+        margin-top: 2%;
+        position: absolute;
+        text-align: center;
+        left: 20%;
+    
+    }
+
+    #explorar{
+        margin-top: 2%;
+        position: absolute;
+        text-align: center;
+        left: 34%;
+    }
+
+    #siguenos{
+        margin-top: 2%;
+        position: absolute;
+        text-align: center;
+        left: 45%;
+    }
+
+        #siguenos img{
+            height: 50px;
+            width: 50px;
+        }
+
+    #contenido{
+        margin-top: 2%;
+        position: absolute;
+        text-align: justify;
+        width: 20%;
+        right: 15%;
+    }
+        #contenido p{
+            margin-bottom: 20px;
+        }
+
+#copyright{
+    bottom: 5px;
+    right: 10px;
+    font-size: 90%;
+    position: absolute;
+    text-align: center;
+}

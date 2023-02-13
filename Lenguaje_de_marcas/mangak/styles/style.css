@@ -517,8 +517,9 @@ main article h4{
 
 /**FOOTER**/
 footer{
+    position: absolute;
+    bottom: 0;
     color: white;
-    float: left;
     width: 100%;
     background-color: black;
     position: relative;
