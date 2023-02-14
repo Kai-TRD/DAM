@@ -256,7 +256,7 @@ main{
     height: 600px;
     margin: 30px 5px 0 12%;
     width: 30%;
-    background-color: rgba(0, 0, 0, 0.837);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     box-shadow:
     0 0 2px rgb(255, 255, 255),
@@ -289,7 +289,7 @@ main{
     height: 300px;
     margin: 30px 5px 20px 60px;
     width: 40%;
-    background-color: rgba(0, 0, 0, 0.837);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     box-shadow:
     0 0 2px rgb(255, 255, 255),
@@ -300,13 +300,11 @@ main{
     0 0 40px rgb(255, 0, 98);
 }
 #sinopsis p{
-    height: 70%;
     position: relative;
-    top: 20%;
     color: white;
     font-size: 18px;
     text-align: justify;
-    margin: 30px;
+    margin: 0 30px 30px 30px;
 }
 
 /* Primera letra mas grande */
@@ -318,12 +316,23 @@ main{
     margin: .1em;
 }
 
+#sinopsis h2{
+    color: white;
+    font-size: 30px;
+    width: 80%;
+    margin: 20px 0 20px  10%;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+
+/* Etiquetas */
 #etiquetas{
     float: left;
     height: 250px;
     margin: 30px 5px 20px 60px;
     width: 40%;
-    background-color: rgba(0, 0, 0, 0.837);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     box-shadow:
     0 0 2px rgb(255, 255, 255),
@@ -333,7 +342,15 @@ main{
     0 0 25px rgb(255, 0, 98),
     0 0 40px rgb(255, 0, 98);
 }
-
+#etiquetas h2{
+    color: white;
+    font-size: 30px;
+    width: 80%;
+    margin: 20px 0 20px  10%;
+    padding: 0 0 5PX 0;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
 /* Articulo etiquetas */
 #etiquetas a{
     float: left;
@@ -358,10 +375,10 @@ main{
 /* seccion Capitulos */
 #capitulos{
     float: left;
-    height: 600px;
+    height: 1000px;
     margin: 30px 5px 100px 12%;
     width: 50%;
-    background-color: rgba(0, 0, 0, 0.837);
+    background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
     box-shadow:
     0 0 2px rgb(255, 255, 255),
@@ -384,15 +401,24 @@ main{
     background-color: rgb(218, 218, 218);
 }
 
-
-
-
 #capitulos article a{
     color: black;
     font-weight: 800;
-    margin: 0 0 0 20px;
+    padding: 5px 85% 5px 20px;
 }
 
+#capitulos article div{
+    width: 18px;
+    height: 18px;
+    border-radius: 30px;
+    margin: 0 5px 0 0;
+    background-color: red;
+    float: right;
+}
+
+/* #capitulos article a:visited  {
+    background-color: green;
+} */
 
 
 
