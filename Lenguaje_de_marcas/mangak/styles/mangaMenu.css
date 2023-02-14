@@ -241,35 +241,157 @@ label i:hover {
 
 
 
-/* Main */
+/******************** Main ********************/
 
 main{
     background-color: rgba(0, 0, 0, 0.699);
 }
 
+
+/* Section de portada */
 #portada{
+    float: left;
     height: 600px;
-    margin: 0 5px 0 90px;
+    margin: 30px 5px 0 12%;
     width: 30%;
-    background-color: bisque;
+    background-color: rgba(0, 0, 0, 0.837);
+    border-radius: 25px;
+    box-shadow:
+    0 0 2px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 15px rgb(255, 0, 98),
+    0 0 12px rgb(255, 0, 98),
+    0 0 25px rgb(255, 0, 98),
+    0 0 40px rgb(255, 0, 98);
 }
+
 #portada h2{
-    position: absolute;
+    color: white;
+    position: relative;
+    top: 30px;
+    height: 40px;
     font-size: 30px;
     text-align: center;
-
+    width: 80%;
+    margin: 0 0 0 10%;
+    border-bottom: 10px white double;
 }
 
 #portada img{
-    padding: 100px 0 0 25%;
+    padding: 60px 0 0 25%;
+}
+
+/* Seccion de sinopsis */
+#sinopsis{
+    float: left;
+    height: 300px;
+    margin: 30px 5px 20px 60px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.837);
+    border-radius: 25px;
+    box-shadow:
+    0 0 2px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 15px rgb(255, 0, 98),
+    0 0 12px rgb(255, 0, 98),
+    0 0 25px rgb(255, 0, 98),
+    0 0 40px rgb(255, 0, 98);
+}
+#sinopsis p{
+    height: 70%;
+    position: relative;
+    top: 20%;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    margin: 30px;
+}
+
+/* Primera letra mas grande */
+#sinopsis p::first-letter{
+    font-size: 2em;
+    font-weight: bold;
+    line-height: .9em;
+    float: left;
+    margin: .1em;
+}
+
+#etiquetas{
+    float: left;
+    height: 250px;
+    margin: 30px 5px 20px 60px;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.837);
+    border-radius: 25px;
+    box-shadow:
+    0 0 2px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 15px rgb(255, 0, 98),
+    0 0 12px rgb(255, 0, 98),
+    0 0 25px rgb(255, 0, 98),
+    0 0 40px rgb(255, 0, 98);
+}
+
+/* Articulo etiquetas */
+#etiquetas a{
+    float: left;
+    font-size: 25px;
+    color: white;
+    margin: 20px;
+    padding: 5px 20px 5px 20px;
+    border: solid white 2px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 20PX;
+}
+
+#etiquetas a:hover{
+    background-color: rgb(75, 75, 75) ;
+}
+#etiquetas i{
+    font-size: 18px;
 }
 
 
 
+/* seccion Capitulos */
+#capitulos{
+    float: left;
+    height: 600px;
+    margin: 30px 5px 100px 12%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.837);
+    border-radius: 25px;
+    box-shadow:
+    0 0 2px rgb(255, 255, 255),
+    0 0 10px rgb(255, 255, 255),
+    0 0 15px rgb(255, 0, 98),
+    0 0 12px rgb(255, 0, 98),
+    0 0 25px rgb(255, 0, 98),
+    0 0 40px rgb(255, 0, 98);
+}
+
+#capitulos article{
+    width:90%;
+    background-color: rgb(182, 182, 182);
+    margin: 20px 20px 20px 35px;
+    padding: 5px 0 5px 0;
+    border-radius: 20px;
+    transition: background-color 1s 1s;
+}
+
+#capitulos article:hover{
+    background-color: rgb(75, 75, 75);
+    transition-duration: 500ms;
+    transition-property: margin-right;
+}
 
 
 
-
+#capitulos article a{
+    color: black;
+    font-weight: 800;
+    margin: 0 0 0 20px;
+}
 
 
 
