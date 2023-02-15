@@ -70,7 +70,11 @@ create table facturascli(
  insert into articulos values(1, 'Salmon fresco', 12, 3);
  insert into articulos values(2, 'Alicates', 25, 1);
  insert into articulos values(3, 'Rollo manguera 10 mt',40, 2);
-  insert into articulos values(4, 'Reloj Casio',50, 4);
+ insert into articulos values(4, 'Reloj Casio',50, 4);
+ insert into articulos values(5, 'Sardina', 7, 3);
+ insert into articulos values(6, 'Cinta Americana', 2, 1);
+ insert into articulos values(7, 'Sustrato saco 5Kg',18, 2);
+ insert into articulos values(8, 'Rolex',500, 4);
  
  
 -- 1 Query que muestre el nombre, apellido y edad de todos los clientes ordenados ascendentemente por edad
@@ -93,60 +97,35 @@ create table facturascli(
 -- Una query que devuelva la descripcion y el precio de todos los articulos cuyo precio coincide con el precio maximo
 -- Intentemos sin subconsultas
 -- Fallaria:
- select descripcion, preciounidad from articulos where preciounidad = max(preciounidad);
+  select descripcion, preciounidad from articulos where preciounidad = max(preciounidad);
 -- Con Subconsultas
- select descripcion, preciounidad from articulos where preciounidad = (select max(preciounidad) from articulos);
+  select descripcion, preciounidad from articulos where preciounidad = (select max(preciounidad) from articulos);
  
 -- Una query que devuelva la descripcion y el precio de todos los articulos cuyo precio coincide con el precio maximo o con el precio minimo
- select descripcion, preciounidad from articulos where preciounidad = (select max(preciounidad) from articulos) or preciounidad = (select min(preciounidad) from articulos);
+  select descripcion, preciounidad from articulos where preciounidad = (select max(preciounidad) from articulos) or preciounidad = (select min(preciounidad) from articulos);
 
 -- Una query que devuelva la descripcion y el precio de todos los articulos cuyo precio coincide con el precio esta por debajop del precio medio de los articulos
- select descripcion, preciounidad from articulos where preciounidad < (select avg(preciounidad) from articulos);
+  select descripcion, preciounidad from articulos where preciounidad < (select avg(preciounidad) from articulos);
  
- -- ***********************************************************
- -- SUBCONSULTA CON IN
- -- ***********************************************************
- -- Una query que devuelva la descripcion y el precio de todos los articulos cuyo precio coincida con la mitad del precio de algun articulo que empiece por 'R' o 'A'
- -- empiezo primero con la subconsulta para usarlo despues como conjunto
- select round(preciounidad/2,2) as La_Mitad from articulos where descripcion like 'R%' or descripcion like 'A%';
+-- ***********************************************************
+-- SUBCONSULTA CON IN
+-- ***********************************************************
+-- Una query que devuelva la descripcion y el precio de todos los articulos cuyo precio coincida con la mitad del precio de algun articulo que empiece por 'R' o 'A'
+-- empiezo primero con la subconsulta para usarlo despues como conjunto
+  select round(preciounidad/2,2) as La_Mitad from articulos where descripcion like 'R%' or descripcion like 'A%';
+-- El resultado:
+  select descripcion, preciounidad from articulos where preciounidad in (select round(preciounidad/2,2) from articulos where descripcion like 'R%' or descripcion like 'A%');
 
---
-select descripcion, preciounidad from articulos where preciounidad in (select round(preciounidad/2,2) from articulos where descripcion like 'R%' or descripcion like 'A%');
+-- Una query para mostrar los importes de todos los articulos par cada seccion
+  select s.seccion, sum(a.preciounidad) from secciones as s join articulos as a on a.cod_seccion = s.cod_seccion group by (s.seccion);
 
-
-
-
-
- 
- -- Query para obtener la descripcion, el precio sin descuento (normal) y el precio con el descuento de todos los articulo
--- select a.descripcion, a.preciounidad as PRECIO , round(preciounidad*(1-descuento),2) as PRECIO_REBAJADO from articulos as a join secciones on a.cod_seccion = secciones.cod_seccion;
- 
- -- Subconsultas:
- -- Una consulta que muestre todos los datos de los artículos, y el nombre de sus secciones cuyo precio es igual al precio maximo de todos los articulos
- 
--- select a.descripcion, a.preciounidad, s.seccion from articulos as a join secciones as s on a.cod_seccion = s.cod_seccion where a.preciounidad = (select max(preciounidad) from articulos);
-
- -- Una consulta que muestre todos los datos de los artículos, y el nombre de sus secciones cuyo precio es menor al precio medio de todos los articulos
-
--- select a.descripcion, a.preciounidad, s.seccion from articulos as a join secciones as s on a.cod_seccion = s.cod_seccion where a.preciounidad < (select avg(preciounidad) from articulos);
-
--- Apart 86:  Una consulta que muestre todos los datos de los artículos, y el nombre de sus secciones cuyo precio es igual al mayor o igual al menor de todos los articulos
-
--- select a.descripcion, a.preciounidad, s.seccion from articulos as a join secciones as s on a.cod_seccion = s.cod_seccion where a.preciounidad = (select max(preciounidad) from articulos ) or a.preciounidad = (select min(preciounidad) from articulos);
-
--- Apart 86:  Una consulta que muestre todos los datos de los artículos, y el nombre de sus secciones cuyo precio es igual al mayor o igual al menor de todos los articulos
-
--- select a.descripcion, a.preciounidad, s.seccion from articulos as a join secciones as s on a.cod_seccion = s.cod_seccion where a.preciounidad = (select max(preciounidad) from articulos ) or a.preciounidad = (select min(preciounidad) from articulos) order by a.preciounidad desc limit 1, 2;
-
---  Apartado 87  
--- Consulta que me de todos los articulos cuya seccion no sea Ferreteria
--- Conjunto o tuplas de articulos que pertenecen a ferreteria
--- select descripcion from articulos as a join secciones as s on a.cod_seccion = s.cod_seccion where s.seccion = 'Ferreteria';
--- select * from articulos where descripcion not IN (select descripcion from articulos as a join secciones as s on a.cod_seccion = s.cod_seccion where s.seccion = 'Ferreteria');
-
--- Otra forma:
--- select a.descripcion, a.preciounidad, s.seccion from articulos as a join secciones as s on a.cod_seccion = s.cod_seccion where s.seccion not like '%Ferret%';
+-- Una query para mostrar los importes de todos los articulos par cada seccion, siempre que dicha suma no supere los 500€
+  select s.seccion, sum(a.preciounidad) from secciones as s join articulos as a on a.cod_seccion = s.cod_seccion group by (s.seccion) having sum(a.preciounidad) <= 500;
 
 
 
 
+
+
+
+  
