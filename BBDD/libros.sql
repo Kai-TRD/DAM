@@ -33,6 +33,7 @@ create table libros(
   select * from libros where autor = 'Lewis Carroll';
 
   select titulo, autor, precio from libros where precio > (select avg(precio) from libros);
-
+-- wuery donde seleccionas el autor, titulo y precio donde el autor empieza por J y el precio es igual o mayor que 30 ordenado con precio ascendente
   select titulo, autor, precio from libros where autor like 'J%' and precio >= 30 order by precio asc;
-
+-- la media del precio de los libros mostrando solo 2 decimales
+  select round(avg(precio), 2) as media from libros;
