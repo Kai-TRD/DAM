@@ -117,15 +117,13 @@ create table facturascli(
   select descripcion, preciounidad from articulos where preciounidad in (select round(preciounidad/2,2) from articulos where descripcion like 'R%' or descripcion like 'A%');
 
 -- Una query para mostrar los importes de todos los articulos par cada seccion
-  select s.seccion, sum(a.preciounidad) from secciones as s join articulos as a on a.cod_seccion = s.cod_seccion group by (s.seccion);
+  select s.seccion, sum(a.preciounidad) as precio_total from secciones as s join articulos as a on a.cod_seccion = s.cod_seccion group by (s.seccion);
 
 -- Una query para mostrar los importes de todos los articulos par cada seccion, siempre que dicha suma no supere los 500€
-  select s.seccion, sum(a.preciounidad) from secciones as s join articulos as a on a.cod_seccion = s.cod_seccion group by (s.seccion) having sum(a.preciounidad) <= 500;
+  select s.seccion, sum(a.preciounidad) as precio_total from secciones as s join articulos as a on a.cod_seccion = s.cod_seccion group by (s.seccion) having sum(a.preciounidad) <= 500;
 
 
 
 
 
 
-
-  
