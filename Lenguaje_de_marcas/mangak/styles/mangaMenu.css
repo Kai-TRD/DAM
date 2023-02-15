@@ -483,7 +483,11 @@ main{
     border-bottom: 10px white solid ;
 }
 
-
+.userSocial a img{
+    width: 40%;
+    height: 40%;
+    margin: 10px 0 20px 20px;
+}
 
 
 
