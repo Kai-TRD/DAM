@@ -1,0 +1,120 @@
+[1][2][5][6][7][8][11][12][14][15][16][17][18][19][20]
+[22][23][24][25][26][27][28][29][30][31][33][34][35]
+[36][37][38][39][46][57][58][60][62][63][64][65][66]
+[67][68][69][70][72][85][86][87][88][89][90][98][99]
+[100][101][102][103][109]
+
+
+    [0]     1	Introducción.			
+    [X]     2	show databases			
+    [X]     3	Creación de una tabla y mostrar sus campos (create table - show tables - describe - drop table)			
+    [X]     4	Carga de registros a una tabla y su recuperación (insert into - select)			
+    [X]     5	Típos de datos básicos de un campo de una tabla.			
+    [X]     6	Recuperación de algunos campos (select)			
+    [X]     7	Recuperación de registros específicos (select - where)			
+    [X]     8	Operadores Relacionales = <> < <= > >=			
+    [X]     9	Borrado de registros de una tabla (delete)			
+    [X]     10	Modificación de registros de una tabla (update)			
+    [X]     11	Clave primaria.			
+    [X]     12	Campo entero con autoincremento.			
+    [X]     13	Comando truncate table.			
+    [X]     14	Valores null.			
+    [X]     15	Valores numéricos sin signo (unsigned)			
+    [X]     16	Tipos de datos			
+    [X]     17	Tipos de datos (texto)			
+    [X]     18	Tipos de datos (numéricos)			
+    [X]     19	Tipos de datos (fechas y horas)			
+    [X]     20	Valores por defecto.			
+    [X]     21	Valores inválidos.			
+    [X]     22	Atributo default en una columna de una tabla.			
+    [X]     23	Atributo zerofill en una columna de una tabla.			
+    [X]     24	Columnas calculadas.			
+    [X]     25	Funciones para el manejo de cadenas.			
+    [X]     26	Funciones matemáticas.			
+    [X]     27	Funciones para el uso de fecha y hora.			
+    [X]     28	Cláusula order by del select.			
+    [X]     29	Operadores Lógicos (and - or - not)			
+    [X]     30	Otros operadores relacionales (between - in)			
+    [X]     31	Búsqueda de patrones (like y not like)			
+    [X]     32	Búsqueda de patrones (regexp)			
+    [X]     33	Contar registros (count)			
+    [X]     34	Funciones de agrupamiento (count - max - min - sum - avg)			
+    [X]     35	Agrupar registros (group by)			
+    [X]     36	Selección de un grupo de registros (having)			
+    [X]     37	Registros duplicados (distinct)			
+    [X]     38	Alias			
+    [X]     39	Clave primaria compuesta.			
+    [X]     40	Indice de una tabla.			
+    [X]     41	Indice de tipo primary.			
+    [X]     42	Indice común (index)
+    [X]     43	Indice único (unique)			
+    [X]     44	Borrar indice (drop index)			
+    [X]     45	Creación de índices a tablas existentes (create index)			
+    [X]     46	Cláusula limit del comando select.			
+    [X]     47	Recuperación de registros en forma aleatoria(rand)			
+    [X]     48	Remplazar registros (replace)			
+    [X]     49	Agregar campos a una tabla (alter table - add)			
+    [X]     50	Eliminar campos de una tabla (alter table - drop)			
+    [X]     51	Modificar campos de una tabla (alter table - modify)			
+    [X]     52	Cambiar el nombre de un campo de una tabla (alter table - change)			
+    [X]     53	Agregar y eliminar la clave primaria (alter table)			
+    [X]     54	Agregar índices(alter table - add index)			
+    [X]     55	Borrado de índices (alter table - drop index)			
+    [X]     56	renombrar tablas (alter table - rename - rename table)			
+    [X]     57	Tipo de dato enum.			
+    [X]     58	Tipo de dato set.			
+    [X]     59	Tipos de datos blob y text.			
+    [X]     60	Funciones de control de flujo (if)			
+    [X]     61	Funciones de control de flujo (case)			
+    [X]     62	Varias tablas (join)			
+    [X]     63	Clave foránea.
+    [X]     64	Varias tablas (left join)			
+    [X]     65	Varias tablas (right join)			
+    [X]     66	Varias tablas (cross join)			
+    [X]     67	Varias tablas (natural join)			
+    [X]     68	Varias tablas (inner join - straight_join)			
+    [X]     69	join, group by y funciones de agrupamiento.			
+    [X]     70	join con más de dos tablas.			
+    [X]     71	Función de control if con varias tablas.			
+    [X]     72	Variables de usuario.			
+    [X]     73	Crear tabla a partir de otra (create - insert)			
+    [X]     74	Crear tabla a partir de otras (create - insert - join)			
+    [X]     75	Insertar datos en una tabla buscando un valor en otra (insert - select)			
+    [X]     76	Insertar registros con valores de otra tabla (insert - select)			
+    [X]     77	Insertar registros con valores de otra tabla (insert - select - join)			
+    [X]     78	Actualizar datos con valores de otra tabla (update)			
+    [X]     79	Actualización en cascada (update - join)			
+    [X]     80	Borrar registros consultando otras tablas (delete - join)			
+    [X]     81	Borrar registros buscando coincidencias en otras tablas (delete - join)			
+    [X]     82	Borrar registros en cascada (delete - join)			
+    [X]     83	Chequear y reparar tablas (check - repair)			
+    [X]     84	Encriptación de datos (aes_encrypt - aes_decrypt)
+    [X]     85	Subconsultas			
+    [X]     86	Subconsultas como expresión			
+    [X]     87	Subconsultas con in			
+    [X]     88	Subconsultas any - some - all			
+    [X]     89	Subconsultas correlacionadas			
+    [X]     90	Subconsultas (Exists y No Exists)			
+    [X]     91	Subconsulta simil autocombinación			
+    [X]     92	Subconsulta en lugar de una tabla			
+    [X]     93	Subconsulta (update - delete)			
+    [X]     94	Subconsulta (insert)			
+    [X]     95	Vistas			
+    [X]     96	Vistas basadas en otras vistas			
+    [X]     97	Vistas actualizables (insert, update y delete)			
+    [X]     98	Procedimientos almacenados			
+    [X]     99	Procedimientos almacenados (crear - ejecutar)			
+    [X]     100	Procedimientos almacenados (parámetros de entrada)			
+    [X]     101	Procedimientos almacenados (parámetros de salida)			
+    [X]     102	Procedimientos almacenados (parámetros de entrada y salida)			
+    [X]     103	Procedimientos almacenados (definición de variables locales)			
+    [X]     104	Procedimientos almacenados (estructura condicional if)			
+    [X]     105	Procedimientos almacenados (estructura condicional case)
+    [X]     106	Procedimientos almacenados (estructuras repetitivas)			
+    [X]     107	Procedimientos almacenados (llamar a otro procedimiento desde un procedimiento existente)			
+    [X]     108	Procedimientos almacenados (llamadas recursivas)			
+    [X]     109	funciones almacenadas			
+    [X]     110	Disparadores (triggers - update trigger)			
+    [X]     111	Disparadores (triggers - insert trigger)			
+    [X]     112	Disparadores (triggers - delete trigger)
+    [X      ]
