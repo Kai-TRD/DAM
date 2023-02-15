@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../images/iconos/icon.ico" type="ico">
+    <link rel="stylesheet" href="../../styles/mangaMenu.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <title>One Piece</title>
+</head>
+
+<body>
+    <header>
+        <!-- Nombre de la obra -->
+        <h3 class="neontext"><a href="../../index.html">MangaK</a></h3>
+
+        <!-- 3 rayas del laterañ display -->
+        <label id="linesUp" for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <!-- Barra de navegacion -->
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#">Populares</a></li>
+                <li><a href="#">Géneros</a></li>
+                <li><a href="#">Nuevos</a></li>
+                <li><a href="#">Noticias </a></li>
+                <li><a href="#">Mi Biblioteca </a></li>
+            </ul>
+
+            <!-- Barra de busqueda -->
+            <div id="search">
+                <input id="searchBar" type="search" placeholder="Search...">
+                <label for="searchBar">
+                    <img src="../../images/iconos/lupa.png" alt="">
+                </label>
+
+                </a>
+        </nav>
+
+        <!-- LATERAL DISPLAY -->
+        <nav id="cuentaLateral">
+
+            <input type="checkbox" id="check">
+
+            <ul>
+                <!-- 3 rayas del laterañ display -->
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <!-- Contenido/EDITAR -->
+
+                <!-- Avatar -->
+                <section class="avatar">
+                    <p>Kai</p>
+                    <img src="../../images/iconos/userAvatar.jpg" alt="">
+                </section>
+
+                <li><a href="#">Perfil</a></li>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">User Setings</a></li>
+                <li id="logout"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main -->
+    <main>
+        <!-- portada manga -->
+        <article class="portada">
+            <h2>Iron Ladies</h2>
+            <img src="../../images/portadas/iron-ladies.jpg" alt="">
+        </article>
+
+        <!-- Sinopsis -->
+        <article class="sinopsis">
+            <h2>Sinopsis</h2>
+            <p>El graduado de la universidad Mu Siyun envió su currículum a la flota estelar por un capricho y de alguna
+                manera se convirtió en el Almirante de la Flota. Esta es la historia de un almirante con un harén de
+                3000 mujeres soldados que conquistan el universo ...
+            </p>
+        </article>
+
+        <!-- Etiquetas -->
+        <!-- 
+                <a href=""><i class="fas fa-tags"></i> Acción</a>
+                <a href=""><i class="fas fa-tags"></i> Aventura</a> 
+                <a href=""><i class="fas fa-tags"></i> Comedia</a> 
+                <a href=""><i class="fas fa-tags"></i> Drama</a> 
+                <a href=""><i class="fas fa-tags"></i> Recuentos de la vida</a>  
+                <a href=""><i class="fas fa-tags"></i> Ecchi</a> 
+                <a href=""><i class="fas fa-tags"></i> Fantasia</a> 
+                <a href=""><i class="fas fa-tags"></i> Magia</a> 
+                <a href=""><i class="fas fa-tags"></i> Sobrenatural</a> 
+                <a href=""><i class="fas fa-tags"></i> Horror</a> 
+                <a href=""><i class="fas fa-tags"></i> Misterio</a> 
+                <a href=""><i class="fas fa-tags"></i> Psicológico</a> 
+                <a href=""><i class="fas fa-tags"></i> Romance</a> 
+                <a href=""><i class="fas fa-tags"></i> Ciencia Ficción</a>  
+                <a href=""><i class="fas fa-tags"></i> Thriller</a> 
+                <a href=""><i class="fas fa-tags"></i> Deporte</a> 
+                <a href=""><i class="fas fa-tags"></i> Harem</a> 
+                <a href=""><i class="fas fa-tags"></i> Mecha</a> 
+                <a href=""><i class="fas fa-tags"></i> Supervivencia</a> 
+                <a href=""><i class="fas fa-tags"></i> Reencarnación</a> 
+                <a href=""><i class="fas fa-tags"></i> Gore</a> 
+                <a href=""><i class="fas fa-tags"></i> Apocalíptico</a> 
+                <a href=""><i class="fas fa-tags"></i> Tragedia</a> 
+                <a href=""><i class="fas fa-tags"></i> Vida Escolar</a>  
+                <a href=""><i class="fas fa-tags"></i> Historia</a> 
+                <a href=""><i class="fas fa-tags"></i> Militar</a> 
+                <a href=""><i class="fas fa-tags"></i> Policiaco</a> 
+                <a href=""><i class="fas fa-tags"></i> Crimen</a> 
+                <a href=""><i class="fas fa-tags"></i> Superpoderes</a> 
+                <a href=""><i class="fas fa-tags"></i> Vampiros</a> 
+                <a href=""><i class="fas fa-tags"></i> Artes Marciales</a>  
+                <a href=""><i class="fas fa-tags"></i> Samurái</a> 
+                <a href=""><i class="fas fa-tags"></i> Realidad Virtual</a>  
+                <a href=""><i class="fas fa-tags"></i> Ciberpunk</a> 
+                <a href=""><i class="fas fa-tags"></i> Musica</a> 
+                <a href=""><i class="fas fa-tags"></i> Parodia</a> 
+                <a href=""><i class="fas fa-tags"></i> Animación</a> 
+                <a href=""><i class="fas fa-tags"></i> Demonios</a> 
+                <a href=""><i class="fas fa-tags"></i> Familia</a> 
+                <a href=""><i class="fas fa-tags"></i> Extranjero</a> 
+                <a href=""><i class="fas fa-tags"></i> Niños</a> 
+                <a href=""><i class="fas fa-tags"></i> Realidad</a> 
+                <a href=""><i class="fas fa-tags"></i> Telenovela</a> 
+                <a href=""><i class="fas fa-tags"></i> Guerra</a> 
+                <a href=""><i class="fas fa-tags"></i> Oeste</a> 
+                <a href=""><i class="fas fa-tags"></i> Traps</a>
+            -->
+
+        <article class="etiquetas">
+            <h2>Etiquetas</h2>
+            <a href=""><i class="fas fa-tags"></i> Acción</a>
+            <a href=""><i class="fas fa-tags"></i> Aventura</a>
+            <a href=""><i class="fas fa-tags"></i> Comedia</a>
+            <a href=""><i class="fas fa-tags"></i> Drama</a>
+            <a href=""><i class="fas fa-tags"></i> Fantasia</a>
+            <a href=""><i class="fas fa-tags"></i> Artes Marciales</a>
+
+        </article>
+
+
+        <section class="capitulos">
+            <!-- <article><a href="cap1.html">Capítulo 1</a><div></div></article>            -->
+            <article><a href="cap1.html">Capítulo 1</a></article>
+            <article><a href="cap2.html">Capítulo 2</a></article>
+            <article><a href="cap3.html">Capítulo 3</a></article>
+            <article><a href="cap4.html">Capítulo 4</a></article>
+            <article><a href="cap5.html">Capítulo 5</a></article>
+            <article><a href="cap6.html">Capítulo 6</a></article>
+            <article><a href="cap7.html">Capítulo 7</a></article>
+            <article><a href="cap8.html">Capítulo 8</a></article>
+            <article><a href="cap9.html">Capítulo 9</a></article>
+            <article><a href="cap10.html">Capítulo 10</a></article>
+            <article><a href="cap11.html">Capítulo 11</a></article>
+            <article><a href="cap12.html">Capítulo 12</a></article>
+            <article><a href="cap13.html">Capítulo 13</a></article>
+            <article><a href="cap14.html">Capítulo 14</a></article>
+            <article><a href="cap15.html">Capítulo 15</a></article>
+            <article><a href="cap16.html">Capítulo 16</a></article>
+            <article><a href="cap17.html">Capítulo 17</a></article>
+            <article><a href="cap18.html">Capítulo 18</a></article>
+            <article><a href="cap19.html">Capítulo 19</a></article>
+            <article><a href="cap20.html">Capítulo 20</a></article>
+            <article><a href="cap21.html">Capítulo 21</a></article>
+            <article><a href="cap22.html">Capítulo 22</a></article>
+            <article><a href="cap23.html">Capítulo 23</a></article>
+            <article><a href="cap24.html">Capítulo 24</a></article>
+            <article><a href="cap25.html">Capítulo 25</a></article>
+            <article><a href="cap26.html">Capítulo 26</a></article>
+            <article><a href="cap27.html">Capítulo 27</a></article>
+            <article><a href="cap28.html">Capítulo 28</a></article>
+            <article><a href="cap29.html">Capítulo 29</a></article>
+            <article><a href="cap30.html">Capítulo 30</a></article>
+            <article><a href="cap31.html">Capítulo 31</a></article>
+            <article><a href="cap32.html">Capítulo 32</a></article>
+            <article><a href="cap33.html">Capítulo 33</a></article>
+            <article><a href="cap34.html">Capítulo 34</a></article>
+            <article><a href="cap35.html">Capítulo 35</a></article>
+            <article><a href="cap36.html">Capítulo 36</a></article>
+            <article><a href="cap37.html">Capítulo 37</a></article>
+            <article><a href="cap38.html">Capítulo 38</a></article>
+            <article><a href="cap39.html">Capítulo 39</a></article>
+            <article><a href="cap40.html">Capítulo 40</a></article>
+            <article><a href="cap41.html">Capítulo 41</a></article>
+            <article><a href="cap42.html">Capítulo 42</a></article>
+            <article><a href="cap43.html">Capítulo 43</a></article>
+            <article><a href="cap44.html">Capítulo 44</a></article>
+            <article><a href="cap45.html">Capítulo 45</a></article>
+            <article><a href="cap46.html">Capítulo 46</a></article>
+            <article><a href="cap47.html">Capítulo 47</a></article>
+            <article><a href="cap48.html">Capítulo 48</a></article>
+            <article><a href="cap49.html">Capítulo 49</a></article>
+            <article><a href="cap50.html">Capítulo 50</a></article>
+            <article><a href="cap51.html">Capítulo 51</a></article>
+            <article><a href="cap52.html">Capítulo 52</a></article>
+            <article><a href="cap53.html">Capítulo 53</a></article>
+            <article><a href="cap54.html">Capítulo 54</a></article>
+            <article><a href="cap55.html">Capítulo 55</a></article>
+            <article><a href="cap56.html">Capítulo 56</a></article>
+            <article><a href="cap57.html">Capítulo 57</a></article>
+            <article><a href="cap58.html">Capítulo 58</a></article>
+            <article><a href="cap59.html">Capítulo 59</a></article>
+            <article><a href="cap60.html">Capítulo 60</a></article>
+            <article><a href="cap61.html">Capítulo 61</a></article>
+            <article><a href="cap62.html">Capítulo 62</a></article>
+            <article><a href="cap63.html">Capítulo 63</a></article>
+            <article><a href="cap64.html">Capítulo 64</a></article>
+            <article><a href="cap65.html">Capítulo 65</a></article>
+            <article><a href="cap66.html">Capítulo 66</a></article>
+            <article><a href="cap67.html">Capítulo 67</a></article>
+            <article><a href="cap68.html">Capítulo 68</a></article>
+            <article><a href="cap69.html">Capítulo 69</a></article>
+            <article><a href="cap70.html">Capítulo 70</a></article>
+            <article><a href="cap71.html">Capítulo 71</a></article>
+            <article><a href="cap72.html">Capítulo 72</a></article>
+            <article><a href="cap73.html">Capítulo 73</a></article>
+            <article><a href="cap74.html">Capítulo 74</a></article>
+            <article><a href="cap75.html">Capítulo 75</a></article>
+            <article><a href="cap76.html">Capítulo 76</a></article>
+            <article><a href="cap77.html">Capítulo 77</a></article>
+            <article><a href="cap78.html">Capítulo 78</a></article>
+            <article><a href="cap79.html">Capítulo 79</a></article>
+            <article><a href="cap80.html">Capítulo 80</a></article>
+            <article><a href="cap81.html">Capítulo 81</a></article>
+            <article><a href="cap82.html">Capítulo 82</a></article>
+            <article><a href="cap83.html">Capítulo 83</a></article>
+            <article><a href="cap84.html">Capítulo 84</a></article>
+            <article><a href="cap85.html">Capítulo 85</a></article>
+            <article><a href="cap86.html">Capítulo 86</a></article>
+            <article><a href="cap87.html">Capítulo 87</a></article>
+            <article><a href="cap88.html">Capítulo 88</a></article>
+            <article><a href="cap89.html">Capítulo 89</a></article>
+            <article><a href="cap90.html">Capítulo 90</a></article>
+            <article><a href="cap91.html">Capítulo 91</a></article>
+            <article><a href="cap92.html">Capítulo 92</a></article>
+            <article><a href="cap93.html">Capítulo 93</a></article>
+            <article><a href="cap94.html">Capítulo 94</a></article>
+            <article><a href="cap95.html">Capítulo 95</a></article>
+            <article><a href="cap96.html">Capítulo 96</a></article>
+            <article><a href="cap97.html">Capítulo 97</a></article>
+            <article><a href="cap98.html">Capítulo 98</a></article>
+            <article><a href="cap99.html">Capítulo 99</a></article>
+            <article><a href="cap100.html">Capítulo 100</a></article>
+            <article><a href="cap101.html">Capítulo 101</a></article>
+            <article><a href="cap102.html">Capítulo 102</a></article>
+            <article><a href="cap103.html">Capítulo 103</a></article>
+            <article><a href="cap104.html">Capítulo 104</a></article>
+            <article><a href="cap105.html">Capítulo 105</a></article>
+            <article><a href="cap106.html">Capítulo 106</a></article>
+            <article><a href="cap107.html">Capítulo 107</a></article>
+            <article><a href="cap108.html">Capítulo 108</a></article>
+            <article><a href="cap109.html">Capítulo 109</a></article>
+            <article><a href="cap110.html">Capítulo 110</a></article>
+            <article><a href="cap111.html">Capítulo 111</a></article>
+            <article><a href="cap112.html">Capítulo 112</a></article>
+            <article><a href="cap113.html">Capítulo 113</a></article>
+            <article><a href="cap114.html">Capítulo 114</a></article>
+            <article><a href="cap115.html">Capítulo 115</a></article>
+            <article><a href="cap116.html">Capítulo 116</a></article>
+            <article><a href="cap117.html">Capítulo 117</a></article>
+            <article><a href="cap118.html">Capítulo 118</a></article>
+            <article><a href="cap119.html">Capítulo 119</a></article>
+            <article><a href="cap120.html">Capítulo 120</a></article>
+            <article><a href="cap121.html">Capítulo 121</a></article>
+            <article><a href="cap122.html">Capítulo 122</a></article>
+            <article><a href="cap123.html">Capítulo 123</a></article>
+            <article><a href="cap124.html">Capítulo 124</a></article>
+            <article><a href="cap125.html">Capítulo 125</a></article>
+            <article><a href="cap126.html">Capítulo 126</a></article>
+            <article><a href="cap127.html">Capítulo 127</a></article>
+            <article><a href="cap128.html">Capítulo 128</a></article>
+            <article><a href="cap129.html">Capítulo 129</a></article>
+            <article><a href="cap130.html">Capítulo 130</a></article>
+            <article><a href="cap131.html">Capítulo 131</a></article>
+            <article><a href="cap132.html">Capítulo 132</a></article>
+            <article><a href="cap133.html">Capítulo 133</a></article>
+            <article><a href="cap134.html">Capítulo 134</a></article>
+            <article><a href="cap135.html">Capítulo 135</a></article>
+            <article><a href="cap136.html">Capítulo 136</a></article>
+            <article><a href="cap137.html">Capítulo 137</a></article>
+            <article><a href="cap138.html">Capítulo 138</a></article>
+            <article><a href="cap139.html">Capítulo 139</a></article>
+            <article><a href="cap140.html">Capítulo 140</a></article>
+            <article><a href="cap141.html">Capítulo 141</a></article>
+            <article><a href="cap142.html">Capítulo 142</a></article>
+            <article><a href="cap143.html">Capítulo 143</a></article>
+            <article><a href="cap144.html">Capítulo 144</a></article>
+            <article><a href="cap145.html">Capítulo 145</a></article>
+            <article><a href="cap146.html">Capítulo 146</a></article>
+            <article><a href="cap147.html">Capítulo 147</a></article>
+            <article><a href="cap148.html">Capítulo 148</a></article>
+            <article><a href="cap149.html">Capítulo 149</a></article>
+            <article><a href="cap150.html">Capítulo 150</a></article>
+            <article><a href="cap151.html">Capítulo 151</a></article>
+            <article><a href="cap152.html">Capítulo 152</a></article>
+            <article><a href="cap153.html">Capítulo 153</a></article>
+            <article><a href="cap154.html">Capítulo 154</a></article>
+            <article><a href="cap155.html">Capítulo 155</a></article>
+            <article><a href="cap156.html">Capítulo 156</a></article>
+            <article><a href="cap157.html">Capítulo 157</a></article>
+            <article><a href="cap158.html">Capítulo 158</a></article>
+            <article><a href="cap159.html">Capítulo 159</a></article>
+            <article><a href="cap160.html">Capítulo 160</a></article>
+            <article><a href="cap161.html">Capítulo 161</a></article>
+            <article><a href="cap162.html">Capítulo 162</a></article>
+            <article><a href="cap163.html">Capítulo 163</a></article>
+            <article><a href="cap164.html">Capítulo 164</a></article>
+            <article><a href="cap165.html">Capítulo 165</a></article>
+            <article><a href="cap166.html">Capítulo 166</a></article>
+            <article><a href="cap167.html">Capítulo 167</a></article>
+            <article><a href="cap168.html">Capítulo 168</a></article>
+            <article><a href="cap169.html">Capítulo 169</a></article>
+            <article><a href="cap170.html">Capítulo 170</a></article>
+            <article><a href="cap171.html">Capítulo 171</a></article>
+            <article><a href="cap172.html">Capítulo 172</a></article>
+            <article><a href="cap173.html">Capítulo 173</a></article>
+            <article><a href="cap174.html">Capítulo 174</a></article>
+            <article><a href="cap175.html">Capítulo 175</a></article>
+            <article><a href="cap176.html">Capítulo 176</a></article>
+            <article><a href="cap177.html">Capítulo 177</a></article>
+            <article><a href="cap178.html">Capítulo 178</a></article>
+            <article><a href="cap179.html">Capítulo 179</a></article>
+            <article><a href="cap180.html">Capítulo 180</a></article>
+            <article><a href="cap181.html">Capítulo 181</a></article>
+            <article><a href="cap182.html">Capítulo 182</a></article>
+            <article><a href="cap183.html">Capítulo 183</a></article>
+            <article><a href="cap184.html">Capítulo 184</a></article>
+            <article><a href="cap185.html">Capítulo 185</a></article>
+            <article><a href="cap186.html">Capítulo 186</a></article>
+            <article><a href="cap187.html">Capítulo 187</a></article>
+            <article><a href="cap188.html">Capítulo 188</a></article>
+            <article><a href="cap189.html">Capítulo 189</a></article>
+            <article><a href="cap190.html">Capítulo 190</a></article>
+            <article><a href="cap191.html">Capítulo 191</a></article>
+            <article><a href="cap192.html">Capítulo 192</a></article>
+
+
+        </section>
+
+        <section class="userZone">
+            <article class="userManagement">
+                <div class="leido">
+                    <i class="element-header-bar-element-icon far fa-check-circle fa-2x fa-fw"></i>
+                    <p>Leido</p>
+                </div>
+
+                <div class="pendiente">
+                    <i class="element-header-bar-element-icon far fa-clock fa-2x fa-fw"></i>
+                    <p>Pendiente</p>
+                </div>
+
+                <div class="siguiendo">
+                    <i class="element-header-bar-element-icon fa-play-circle fa-2x fa-fw far"></i>
+                    <p>Siguiendo</p>
+                </div>
+
+                <div class="favorito">
+                    <i class="element-header-bar-element-icon far fa-heart fa-2x fa-fw"></i>
+                    <p>Favorito</p>
+                </div>
+
+                <div class="loTengo">
+                    <i class="element-header-bar-element-icon far fa-check-square fa-2x fa-fw"></i>
+                    <p>Lo Tengo</p>
+                </div>
+
+                <div class="abandonado">
+                    <i class="element-header-bar-element-icon far fa-thumbs-down fa-2x fa-fw"></i>
+                    <p>Abandonado</p>
+                </div>
+            </article>
+
+            <article class="userSocial">
+                <h2>Compartir manga</h2>
+                <a href="https://es-es.facebook.com/"><img src="../../images/iconos/facebook.png" alt=""></a>
+                <a href="https://twitter.com/home?lang=es"><img src="../../images/iconos/twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="../../images/iconos/instagram.png" alt=""></a>
+                <a href="https://www.youtube.com/"><img src="../../images/iconos/youtube.png" alt=""></a>
+                <a href="https://www.reddit.com/"><img src="../../images/iconos/reddit.png" alt=""></a>
+                <a href="https://www.pinterest.es/"><img src="../../images/iconos/pinterest.png" alt=""></a>
+            </article>
+        </section>
+
+    </main>
+
+    <!-- Footer pag sim -->
+    <footer>
+        <article id="website">
+            <h4>Website</h4>
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Nuestros servicios</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+            </ul>
+        </article>
+
+        <article id="explorar">
+            <h4>Exploral</h4>
+            <ul>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Grupos</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+            </ul>
+        </article>
+
+        <article id="siguenos">
+            <h4>Siguenos</h4>
+            <a href="#"><img src="../../images/iconos/facebookIcon.png" alt=""></a>
+            <a href="#"><img src="../../images/iconos/twitterIcon.png" alt=""></a>
+            <a href="#"><img src="../../images/iconos/InstagramIcon.png" alt=""></a>
+            <a href="#"><img src="../../images/iconos/discrodIcon.png" alt=""></a>
+        </article>
+
+        <article id="contenido">
+            <h4>Contenidos</h4>
+            <p>
+                MangaK no realiza las traducciones aquí publicadas y solo es un repositorio con visor propio para que se
+                puedan leer de forma comoda las obras.
+            </p>
+        </article>
+        <!-- copyright -->
+        <article id="copyright">&copy; 2022 MangaK</article>
+    </footer>
+
+</body>
+
+</html>
