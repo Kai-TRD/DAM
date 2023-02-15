@@ -117,8 +117,6 @@ select descripcion, preciounidad from articulos where preciounidad in (select ro
 
 
 
-
-
  
  -- Query para obtener la descripcion, el precio sin descuento (normal) y el precio con el descuento de todos los articulo
 -- select a.descripcion, a.preciounidad as PRECIO , round(preciounidad*(1-descuento),2) as PRECIO_REBAJADO from articulos as a join secciones on a.cod_seccion = secciones.cod_seccion;
