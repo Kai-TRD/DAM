@@ -161,26 +161,31 @@ select a.descripcion, a.preciounidad, l.cantidad from articulos as a join lineas
 
 -- 12 Obtener los todos los datos de los cliente y de sus facturas con el importe total de las mismas, (agrupados por cliente). (Sólo los clientes que tienen facturas)
 select 'Query 12:';
-
+select c.*, f.* from clientes as c join facturascli as f on c.dni = f.dni group by f.factura;
 
 
 -- 13 Obtener los todos los datos de los cliente y de sus facturas con el importe total de las mismas, (agrupados por cliente).  Tambien apareceran los que no tienen facturas 
 select 'Query 13:';
-
+select distinct c.*, f.*, l.cantidad*a.preciounidad from clientes as c join facturascli as f join articulos as a join lineasfac as l on c.dni = f.dni and a.articulo = l.articulo;
 
 
 -- 14 Realizar una procedure a la que se le pasa un número de factura como variable de entrada y devuelve el dni del cliente asociado a la factura y el importe total de dicha factura
 select 'Query 14:';
 
+ drop procedure if exists pa_libros_autor_editorial;
 
+ delimiter //
+ create procedure dni_cliente(
+   in f_numeroFactura int)
+ begin
+   select factura, dni
+     from facturascli
+     where f_numeroFactura = factura and
+           d_dni = dni;
+ end //
+ delimiter ;
+
+call dni_cliente(105);
 
 -- 15 Realizar una procedure a la que se le pasa un dni como variable de entrada y devuelve la cantidad de facturas pendientes de pago que tenga
 select 'Query 15:';
-
-
- 
- 
-
-
- 
- 
