@@ -591,6 +591,36 @@ footer article ul li{
     float: left;
     width: 800px;
     height: 1200px;
-    padding: 0 0 0 30%;
+    padding: 0 0 10px 30%;
 }
 
+.control{
+    position: fixed;
+    bottom: 25px;
+    right: 0;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 30px 20px 30px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    z-index: 2;
+}
+.adelante{
+    color: white;
+    margin: 0 30px 0 0;
+    font-size: 30px;
+}
+.menu{
+    color: white;
+    margin: 0 30px 0 0;
+    font-size: 30px;
+}
+.atras{
+    color: white;
+    margin: 0 30px 0 0;
+    font-size: 30px;
+}
+.arribaPag{
+    color: white;
+    margin: 0 0 0 0;
+    font-size: 30px;
+}
