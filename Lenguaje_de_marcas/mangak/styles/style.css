@@ -770,7 +770,7 @@ footer article ul li{
         }
 
         main article{
-            height: 195px;
+            height: 218px;
             width: 145px;
             padding: 8px 0 0 0;
             overflow-y:hidden;
@@ -888,11 +888,51 @@ footer article ul li{
     }
 
 
+    /**Footer Movil**/
+        footer{
+            z-index: 3;
+            float: left;
+            clear: both;
+            height: 450px;
+        }
 
+        footer article ul li{
+            margin-bottom: 12px;
+        }
+        
+            #website{
+                font-size: 80%;
+                left: 0%;
+                margin-left: 40px;
+            }
 
+            #explorar{
+                font-size: 80%;
+                left: 0%;
+                margin-left: 300px;
+            }
 
+            #siguenos{
+                font-size: 80%;
+                left: 0%;
+                margin: 180px 0 0 40px;
+            }
 
-    footer{
-        z-index: 3;
-    }
+                #siguenos img{
+                    height: 50px;
+                    width: 50px;
+                }
+
+            #contenido{
+                font-size: 80%;
+                left: 0%;
+                margin: 180px 0 0 300px;
+            }
+                #contenido p{
+                    margin-bottom: 20px;
+                }
+
+        #copyright{ 
+            font-size: 60%;
+        }
 }
