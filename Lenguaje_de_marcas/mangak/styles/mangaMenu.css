@@ -409,11 +409,11 @@ main{
     float: right;
 }
 
-/* .capitulos article a:visited  {
-    background-color: green;
-} */
+    /* .capitulos article a:visited  {
+        background-color: green;
+    } */
 
-
+/* Manga manage section */
 .userZone{
     float: left;
     height: 1000px;
@@ -440,36 +440,81 @@ main{
     float: left;
 }
 .userZone div p{
-    color: white;
     margin: 8px 0 0 0;
     font-weight: 900;
 }
 
-.leido{
-    color: greenyellow;
-}
+    /* ---------- */
+    .leido{
+        color: greenyellow;
+    }
+    .leido p{
+        color: white;
+    }
+    .leido p:hover{
+        color: greenyellow;
+    }
 
-.pendiente{
-    color: orange;
-}
+    /* ---------- */
+    .pendiente{
+        color: orange;
+    }
+    .pendiente p{
+        color: white;
+    }
+    .pendiente p:hover{
+        color: orange;
+    }
 
-.siguiendo{
-    color: cyan;
-}
+    /* ---------- */
+    .siguiendo{
+        color: cyan;
+    }
+    .siguiendo p{
+        color: white;
+    }
+    .siguiendo p:hover{
+        color: cyan;
+    }
+    
+    /* ---------- */
+    .favorito{
+        color: hotpink;
+    }
+    .favorito p{
+        color: white;
+    }
+    .favorito p:hover{
+        color: hotpink;
+    }
 
-.favorito{
-    color: hotpink;
-}
+    /* ---------- */
+    .loTengo{
+        color: magenta;
+    }
+    .loTengo p{
+        color: white;
+    }
+    .loTengo p:hover{
+        color: magenta;
+    }
 
-.loTengo{
-    color: magenta;
-}
+    /* ---------- */
+    .abandonado{
+        color: red;
+    }
+    .abandonado p{
+        color: white;
+    }
+    .abandonado p:hover{
+        color: red;
+    }
 
-.abandonado{
-    color: red;
-}
 
 
+
+
+/* Soicial section */
 .userSocial{
     margin: 50px 0 0 0;
 }
@@ -489,7 +534,9 @@ main{
     margin: 10px 0 20px 20px;
 }
 
-
+.userSocial a img:hover{
+    filter: grayscale(50%);
+}
 
 
 
