@@ -291,6 +291,10 @@ header h1{
 
 /* LATERAL DISPLAY */
 
+#opcionMovil{
+    display: none;
+}
+
 label i{
     font-size: 180%;
     color: black;
@@ -697,6 +701,10 @@ footer article ul li{
 
 
     /* LATERAL DISPLAY */
+        #opcionMovil{
+            display: none;
+        }
+
         label i{
             font-size: 130%;
             margin: 80px 5px 0 0;
@@ -812,5 +820,77 @@ footer article ul li{
         #copyright{ 
             font-size: 60%;
         }
+
+}
+
+
+
+/* ----------------------MOVILES---------------------- */
+
+@media only screen and (max-width: 500px) {
+    aside ul{
+        display: none;
+    }
+
+    aside{
+        position: fixed;
+        width: 80px;
+        right: 0;
+        top: 0;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0) 20% ,#ffffff 40%);
+
+    }
+
+    label i{
+        font-size: 150%;
+        margin: 80px 10px 0 0;
+    }
+    #mainNav ul{
+        display: none;
+    }
+    #mainNav{
+        background-color: black;
+        height: 40px;
+    }
+
+    #arriba{
+        z-index: 1;
+    }
+
+    #search{
+        position: absolute; 
+        right: 22%;
+        top: 105px;
+    }
+
+    /* LATERAL DISPLAY */
+    #cuentaLateral{
+        z-index: 10;
+    }
+    #cuentaLateral ul{
+        width: 100%;
+        margin-top: -190px;
+    }
+
+    .avatar img{
+        height: 100px;
+        margin: 50px 0 30px 38%;
+    }
+
+    #opcionMovil{
+        display: contents;
+    }
     
+    #logout{
+        top: 13%;
+    }
+
+
+
+
+
+
+    footer{
+        z-index: 3;
+    }
 }
