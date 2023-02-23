@@ -91,7 +91,7 @@
     top: 135px;
     left: 0;
     height: 90px;
-    /* user-select: none; */
+    user-select: none;
     pointer-events: none;
     z-index: 10 ;
 }
