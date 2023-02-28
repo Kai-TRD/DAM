@@ -413,6 +413,8 @@ main{
         background-color: green;
     } */
 
+
+
 /* Manga manage section */
 .userZone{
     float: left;
@@ -674,4 +676,253 @@ footer article ul li{
     color: white;
     margin: 0 0 0 0;
     font-size: 30px;
+}
+
+
+
+
+
+
+
+/* ----------------------TABLET / PORTATIL---------------------- */
+
+@media only screen and (max-width: 1440px) {
+
+
+    h3{
+        margin-top: 20px;
+    }
+
+    main{
+        position: relative;
+        top: 40px;
+    }
+
+    #mainNav ul{
+        padding-bottom: 40px;
+    }
+
+    #mainNav ul li a {
+        font-size: 15px;
+    }
+
+    #search{
+        right: 30%;
+        top: 60px;
+    }
+
+
+    /* AVATAR */
+    .avatar{
+        margin-top: 40px;
+    }
+    .avatar img{
+        height: 100px;
+        margin: 50px 0 30px 70px;
+    }
+
+    .avatar p{
+        font-weight: 600;
+        top: 200px;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0 5px 0;
+    }
+
+    /* Logout bottom */
+        #logout{
+            top: 32%;
+        }
+
+
+
+    /* LATERAL DISPLAY */
+        #opcionMovil{
+            display: none;
+        }
+
+        label i{
+            font-size: 130%;
+            margin: 40px 20px 0 0;
+        }
+
+        #cuentaLateral ul{
+            width: 30%;
+            margin-top: -140px;
+        }
+        #cuentaLateral ul li{
+            font-size: 12px;
+            display: block;
+            text-align: center;
+            clear: both;
+        }
+
+        #cuentaLateral ul li:hover{
+            background-color:rgb(41, 41, 41);
+        }
+            /* Content */
+
+        #cuentaLateral ul li a{
+            color: white;
+            font-size: 110%;
+            width: 100%;
+            font-weight: 900;
+            text-decoration: none;
+        }
+
+    #check:checked ~ ul{
+        right:0;
+    }
+
+    /* Section de portada */
+    .portada{
+        float: left;
+        height: 600px;
+        margin: 30px 5px 0 12%;
+        width: 75%;
+    }
+
+    .portada h2{
+        font-size: 25px;
+    }
+
+    .portada img{
+        margin: 60px 0 0 25%;
+    }
+
+    /* Seccion de sinopsis */
+    .sinopsis{
+        height: 300px;
+        margin: 30px 5px 0 12%;
+        width: 40%;
+    }
+    .sinopsis p{
+        font-size: 15px;
+    }
+
+    .sinopsis h2{
+        font-size: 20px;
+    }
+
+    
+    /* Etiquetas */
+    .etiquetas{
+        height: 300px;
+        margin: 30px 5px 20px 30px;
+        width: 30%;
+    }
+    .etiquetas h2{
+        font-size: 20px;
+    }
+
+    /* Articulo etiquetas */
+    .etiquetas a{
+        font-size: 15px;
+        margin: 5px 0 5px 20px;
+        padding: 5px 20px 5px 20px;
+    }
+
+    .etiquetas i{
+        font-size: 16px;
+    }
+
+
+    /* seccion Capitulos */
+    .capitulos{
+        height: 1170px;
+    }
+
+    .capitulos article{
+        width: 85%;
+        margin: 30px 20px 30px 20px;
+        height: 30px;
+        padding: 10px 0 0 0;
+    }
+    
+    .capitulos article a{
+        height: 30px;
+        width: 200px;
+        margin: 40px 0 0 10px;
+        padding: 20px 60% 5px 20px;
+    }
+
+
+
+
+    /* User Zone */
+    .userZone{
+    height: 1170px;
+    }
+    .userZone div{
+        margin: 20px 10px 10px 10px;
+    }
+
+    .userZone div p{
+        margin: 9px 0 0 0;
+    }
+
+    /* Soicial section */
+    .userSocial{
+        margin: 20px 0 0 0;
+    }
+
+    .userSocial h2{
+        font-size: 20px;
+    }
+
+    .userSocial a img{
+        width: 70%;
+        height: 9%;
+        margin: 0 0 0 15%;
+    }
+
+
+
+    /**Footer Tablet**/
+    footer{
+        height: 250px;
+    }
+
+    footer article ul li{
+        margin-bottom: 12px;
+    }
+    
+        #website{
+            font-size: 80%;
+            left: 5%;
+        }
+
+        #explorar{
+            font-size: 80%;
+            left: 28%;
+        }
+
+        #siguenos{
+            font-size: 80%;
+            left: 43%;
+        }
+
+            #siguenos img{
+                height: 50px;
+                width: 50px;
+            }
+
+        #contenido{
+            font-size: 80%;
+            left: 75%;
+        }
+            #contenido p{
+                margin-bottom: 20px;
+            }
+
+    #copyright{ 
+        font-size: 60%;
+    }
+
+}
+
+/* ----------------------MOVILES---------------------- */
+
+@media only screen and (max-width: 500px) {
+    
 }
