@@ -146,6 +146,9 @@ header h3 a{
 
 /* LATERAL DISPLAY */
 
+#opcionMovil{
+    display: none;
+}
 label i{
     padding: 5px;
 }
@@ -366,7 +369,7 @@ main{
 .capitulos{
     float: left;
     height: 1000px;
-    margin: 30px 5px 100px 12%;
+    margin: 30px 5px 100px 4%;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
@@ -416,10 +419,10 @@ main{
 
 
 /* Manga manage section */
-.userZone{
+.userZone {
     float: left;
     height: 1000px;
-    margin: 30px 5px 100px 3%;
+    margin: 30px 5px 100px 12%;
     width: 20%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 25px;
@@ -641,6 +644,10 @@ footer article ul li{
     width: 800px;
     height: 1200px;
     padding: 0 0 10px 30%; */
+
+    /* Evita la descarga/arrastrar/copy¬paste de los capitulos */
+    pointer-events: none;
+    
     display: block;
     width: 50%;
     margin-left: auto;
@@ -922,7 +929,106 @@ footer article ul li{
 }
 
 /* ----------------------MOVILES---------------------- */
-
 @media only screen and (max-width: 500px) {
-    
+
+
+    #mainNav ul li{
+        display: none;
+    }
+
+    #search{
+        top: 40px;
+        right: 70px;
+    }
+
+    .portada {
+        height: 650px;
+    }
+
+    .portada img{
+        width: 95%;
+        margin: 60px 0 0 3%;
+    }
+
+    .sinopsis {
+        width: 75%;
+    }
+
+    .etiquetas {
+        height: 220px;
+        margin: 30px 5px 20px 12%;
+        width: 75%;
+    }
+
+    .capitulos {
+        margin: 10px 5px 100px 12%;
+        width: 75%;
+    }
+
+    .capitulos article a{
+        padding: 5px 50% 5px 20px;
+    }
+
+    .userZone {
+        margin: 0px 5px 20px 12%;
+        width: 75%;
+        height: 450px;
+    }
+
+    .userZone div{
+        margin: 20px 0 0 5px;
+    }
+    .userSocial a img {
+        width: 20%;
+        height: 9%;
+        margin: 10px 0 0 9%;
+    }
+
+    /**Footer Movil**/
+        footer{
+            z-index: 3;
+            float: left;
+            clear: both;
+            height: 450px;
+        }
+
+        footer article ul li{
+            margin-bottom: 12px;
+        }
+        
+            #website{
+                font-size: 80%;
+                left: 0%;
+                margin-left: 40px;
+            }
+
+            #explorar{
+                font-size: 80%;
+                left: 0%;
+                margin-left: 300px;
+            }
+
+            #siguenos{
+                font-size: 80%;
+                left: 0%;
+                margin: 180px 0 0 40px;
+            }
+
+                #siguenos img{
+                    height: 50px;
+                    width: 50px;
+                }
+
+            #contenido{
+                font-size: 80%;
+                left: 0%;
+                margin: 180px 0 0 300px;
+            }
+                #contenido p{
+                    margin-bottom: 20px;
+                }
+
+        #copyright{ 
+            font-size: 60%;
+        }
 }

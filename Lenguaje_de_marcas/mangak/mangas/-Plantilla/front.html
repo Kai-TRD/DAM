@@ -8,7 +8,7 @@
     <link rel="icon" href="../../images/iconos/icon.ico" type="ico">
     <link rel="stylesheet" href="../../styles/mangaMenu.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    <title>One Piece</title>
+    <title>NombreManga</title>
 </head>
 
 <body>
@@ -42,14 +42,13 @@
 
         <!-- LATERAL DISPLAY -->
         <nav id="cuentaLateral">
-
+            
             <input type="checkbox" id="check">
-
+            
             <ul>
-
                 <!-- Contenido/EDITAR -->
 
-                <!-- Avatar -->
+                    <!-- Avatar -->
                 <section class="avatar">
                     <p>Kai</p>
                     <img src="../../images/iconos/userAvatar.jpg" alt="">
@@ -59,10 +58,17 @@
                 <li><a href="#">Biblioteca</a></li>
                 <li><a href="#">Privacy Policy</a></li>
                 <li><a href="#">User Setings</a></li>
+                <section id="opcionMovil">
+                    <li><a href="#">Populares</a></li>
+                    <li><a href="#">Nuevos</a></li>
+                    <li><a href="#">Géneros</a></li>
+                    <li><a href="#">Noticias </a></li>
+                </section>
+
+                
                 <li id="logout"><a href="#">Logout</a></li>
             </ul>
         </nav>
-
     </header>
 
 
@@ -70,14 +76,15 @@
     <main>
             <!-- portada manga -->
             <article class="portada">
-                <h2>NOMBRE_MANGA</h2>
-                <img src="../../images/portadas/PORTADA_MANGA" alt="">
+                <h2>NombreManga</h2>
+                <img src="../../images/portadas/NOMBREPORTADA.jpg" alt="">
             </article>
 
             <!-- Sinopsis -->
             <article class="sinopsis">
                 <h2>Sinopsis</h2>
-                <p>SINOPSIS
+                <p>
+                    contenido sinopsis
                 </p>
             </article>
 
@@ -135,58 +142,60 @@
                 <h2>Etiquetas</h2>
                 <a href=""><i class="fas fa-tags"></i> Acción</a>
 
+
+
             </article>
 
+            <section class="userZone">
+                <article class="userManagement">
+                    <div class="leido">
+                        <i class="element-header-bar-element-icon far fa-check-circle fa-2x fa-fw"></i>
+                        <p>Leido</p>
+                    </div>
+    
+                    <div class="pendiente">
+                        <i class="element-header-bar-element-icon far fa-clock fa-2x fa-fw"></i>
+                        <p>Pendiente</p>
+                    </div>
+    
+                    <div class="siguiendo">
+                        <i class="element-header-bar-element-icon fa-play-circle fa-2x fa-fw far"></i>
+                        <p>Siguiendo</p>
+                    </div>
+    
+                    <div class="favorito">
+                        <i class="element-header-bar-element-icon far fa-heart fa-2x fa-fw"></i>
+                        <p>Favorito</p>
+                    </div>
+    
+                    <div class="loTengo">
+                        <i class="element-header-bar-element-icon far fa-check-square fa-2x fa-fw"></i>
+                        <p>Lo Tengo</p>
+                    </div>
+    
+                    <div class="abandonado">
+                        <i class="element-header-bar-element-icon far fa-thumbs-down fa-2x fa-fw"></i>
+                        <p>Abandonado</p>
+                    </div>
+                </article>
+    
+                <article class="userSocial">
+                    <h2>Compartir manga</h2>
+                    <a href="https://es-es.facebook.com/"><img src="../../images/iconos/facebook.png" alt=""></a>
+                    <a href="https://twitter.com/home?lang=es"><img src="../../images/iconos/twitter.png" alt=""></a>
+                    <a href="https://www.instagram.com/"><img src="../../images/iconos/instagram.png" alt=""></a>
+                    <a href="https://www.youtube.com/"><img src="../../images/iconos/youtube.png" alt=""></a>
+                    <a href="https://www.reddit.com/"><img src="../../images/iconos/reddit.png" alt=""></a>
+                    <a href="https://www.pinterest.es/"><img src="../../images/iconos/pinterest.png" alt=""></a>
+                </article>
+            </section>
         
         <section class="capitulos">
-            <!-- <article><a href="cap1.html">Capítulo 1</a><div></div></article>            -->
+            <!-- <article><a href="cap1.html">Capítulo 1</a><div></div></article> -->
             <article><a href="cap1.html">Capítulo 1</a></article>
 
+            <!-- AÑADIR MAS CAPITULOS -->
 
-        </section>
-
-        <section class="userZone">
-            <article class="userManagement">
-                <div class="leido">
-                    <i class="element-header-bar-element-icon far fa-check-circle fa-2x fa-fw"></i>
-                    <p>Leido</p>
-                </div>
-
-                <div class="pendiente">
-                    <i class="element-header-bar-element-icon far fa-clock fa-2x fa-fw"></i>
-                    <p>Pendiente</p>
-                </div>
-
-                <div class="siguiendo">
-                    <i class="element-header-bar-element-icon fa-play-circle fa-2x fa-fw far"></i>
-                    <p>Siguiendo</p>
-                </div>
-
-                <div class="favorito">
-                    <i class="element-header-bar-element-icon far fa-heart fa-2x fa-fw"></i>
-                    <p>Favorito</p>
-                </div>
-
-                <div class="loTengo">
-                    <i class="element-header-bar-element-icon far fa-check-square fa-2x fa-fw"></i>
-                    <p>Lo Tengo</p>
-                </div>
-
-                <div class="abandonado">
-                    <i class="element-header-bar-element-icon far fa-thumbs-down fa-2x fa-fw"></i>
-                    <p>Abandonado</p>
-                </div>
-            </article>
-
-            <article class="userSocial">
-                <h2>Compartir manga</h2>
-                <a href="https://es-es.facebook.com/"><img src="../../images/iconos/facebook.png" alt=""></a>
-                <a href="https://twitter.com/home?lang=es"><img src="../../images/iconos/twitter.png" alt=""></a>
-                <a href="https://www.instagram.com/"><img src="../../images/iconos/instagram.png" alt=""></a>
-                <a href="https://www.youtube.com/"><img src="../../images/iconos/youtube.png" alt=""></a>
-                <a href="https://www.reddit.com/"><img src="../../images/iconos/reddit.png" alt=""></a>
-                <a href="https://www.pinterest.es/"><img src="../../images/iconos/pinterest.png" alt=""></a>
-            </article>
         </section>
         
     </main>
