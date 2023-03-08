@@ -280,7 +280,7 @@ header h1{
 /* BARRA DE BUSQUEDA */
 #search{
     position: absolute; 
-    right: 330px;
+    right: 5%;
     top: 168px;
 }
 
@@ -941,7 +941,7 @@ footer article ul li{
             z-index: 3;
             float: left;
             clear: both;
-            height: 450px;
+            height: 700px;
         }
 
         footer article ul li{
@@ -951,19 +951,19 @@ footer article ul li{
             #website{
                 font-size: 80%;
                 left: 0%;
-                margin-left: 40px;
+                margin:20px 0 0 38%;
             }
 
             #explorar{
                 font-size: 80%;
                 left: 0%;
-                margin-left: 300px;
+                margin: 180px 0 0 45%;
             }
 
             #siguenos{
                 font-size: 80%;
                 left: 0%;
-                margin: 180px 0 0 40px;
+                margin: 360px 0 0 28%;
             }
 
                 #siguenos img{
@@ -974,7 +974,9 @@ footer article ul li{
             #contenido{
                 font-size: 80%;
                 left: 0%;
-                margin: 180px 0 0 300px;
+                width: 200px;
+                text-align: center;
+                margin: 520px 0 0 30%;
             }
                 #contenido p{
                     margin-bottom: 20px;
