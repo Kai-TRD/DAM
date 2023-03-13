@@ -353,7 +353,8 @@ main{
     padding: 5px 20px 5px 20px;
     border: solid white 2px;
     background-color: rgb(36, 36, 36);
-    border-radius: 20PX;
+    border-radius: 20px;
+    text-decoration: none;
 }
 
 .etiquetas a:hover{
