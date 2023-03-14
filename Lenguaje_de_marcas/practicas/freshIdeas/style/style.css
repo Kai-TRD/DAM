@@ -3,6 +3,7 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 html {
@@ -54,7 +55,7 @@ header #home {
 /* Banner */
 
 .banner {
-    border: solid 10px rgb(195, 195, 195);
+    border: solid 10px rgb(215, 215, 215);
     margin: 80px 20px 0 20px;
     height: 318px;
     background-image: url(../images/banner.png);
@@ -136,17 +137,95 @@ aside img {
 
 
 main {
-    width: 70%;
+    width: 65%;
     float: left;
-    margin: 30px 0 20px;
+    margin: 30px 0 20px 20px;
 }
 
+.services {
+    margin-bottom: 20px;
+    float: left;
+}
 
+.services h2 {
+    margin: 0 0 10px 0;
+}
 
+.services section {
+    float: left;
+    margin: 0 0 5px 0;
+}
 
+.services section img {
+    float: left;
+    margin: 10px 14px 10px 0;
+    padding: 10px;
+    border: solid rgb(216, 216, 216) 1px;
+}
 
+.services section h3 {
+    float: left;
+    width: 70%;
+    margin: 12px 0 0 0;
+}
 
+.services section p {
+    width: 70%;
+    float: left;
+    margin: 7px 0 0 0;
+    font-size: 17px;
+}
 
+.services section a {
+    width: 70%;
+    float: left;
+    margin: 7px 0 0 0;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+/* About Us */
+.aboutUs {
+    margin-bottom: 20px;
+    float: left;
+}
+
+.aboutUs section {
+    margin-top: 5px;
+}
+
+.aboutUs section img {
+    float: left;
+    margin: 10px 14px 10px 0;
+    padding: 15px 10px 15px 10px;
+    border: solid rgb(216, 216, 216) 1px;
+}
+
+.aboutUs section p {
+    float: left;
+    width: 60%;
+    margin: 13px 0 0 0;
+}
+
+.aboutUs section a {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: 18px;
+}
+ 
+.testimonials {
+    float: left;
+    margin-bottom: 40px;
+}
+
+.testimonials p {
+    float: left;
+    width: 100%;
+    margin: 15px 0 0 0;
+}
 
 
 footer{
@@ -154,10 +233,19 @@ footer{
     margin-left: -34%;
     bottom: 0;
     color: white;
-    width: 167%;
+    width: 167.3%;
+    height: 100px;
     background-color: black;
 }
 
 footer p {
-    position: relative;
+    float: left;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+
+footer article {
+    float: left;
+    margin-left: 24%;
+    margin-top: 30px;
 }
