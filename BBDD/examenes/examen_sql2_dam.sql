@@ -114,6 +114,7 @@ select 'Ejercicio 11:';
 -- delete from motores where id_motor = 2;
 -- ...automáticamente se borren también sus componentes asociados.:
 
+    delete motores join componentes where id_motor = 2;
 
 select 'Ejercicio 12:';
 -- Reescribe la instrucción "delete..." anterior, de manera que al realizar el borrado del motor cuyo "id_motor" sea = 2 y sus componentes, no sea necesario usar una Foreign Key.
