@@ -884,6 +884,58 @@ footer article ul li{
         margin: 0 0 0 15%;
     }
 
+    /* Control */
+    .control{
+        position: fixed;
+        bottom: 12px;
+        right: 0;
+        background-color: rgb(0, 0, 0);
+        padding: 20px 30px 20px 30px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        z-index: 2;
+    }
+    .adelante{
+        color: white;
+        font-size: 20px;
+
+    }
+    .menu{
+        color: white;
+        margin: 0 30px 0 0;
+        font-size: 20px;
+
+    }
+    .atras{
+        color: white;
+        margin: 0 30px 0 0;
+        font-size: 20px;
+
+    }
+    .arribaPag{
+        color: white;
+        margin: 0 0 0 0;
+        font-size: 20px;
+
+    }
+
+    /* Pagina del manga */
+    .pagina{
+        /* float: left;
+        width: 800px;
+        height: 1200px;
+        padding: 0 0 10px 30%; */
+    
+        /* Evita la descarga/arrastrar/copy¬paste de los capitulos */
+        pointer-events: none;
+        
+        display: block;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
 
 
     /**Footer Tablet**/
@@ -931,6 +983,15 @@ footer article ul li{
 
 /* ----------------------MOVILES---------------------- */
 @media only screen and (max-width: 500px) {
+
+    #search input {
+        height: 25px;
+        width: 120px;
+        padding: 3px 0 0 10px;
+        font-size: 15px;
+        border-radius: 100px;
+        border: white solid 1px;
+    }
 
 
     #mainNav ul li{
@@ -985,51 +1046,141 @@ footer article ul li{
         margin: 10px 0 0 9%;
     }
 
+
+    /* LATERAL DISPLAY */
+    #cuentaLateral{
+        z-index: 10;
+    }
+    #cuentaLateral ul{
+        width: 100%;
+        margin-top: -190px;
+    }
+
+    .avatar img{
+        height: 100px;
+        margin: 90px 0 30px 38%;
+    }
+
+    .avatar p {
+        margin-top: 40px;
+    }
+
+    #opcionMovil{
+        display: contents;
+    }
+    
+    #logout{
+        top: 13%;
+    }
+
+
     /**Footer Movil**/
-        footer{
-            z-index: 3;
-            float: left;
-            clear: both;
-            height: 450px;
-        }
+    footer{
+        z-index: 3;
+        float: left;
+        clear: both;
+        height: 700px;
+    }
 
-        footer article ul li{
-            margin-bottom: 12px;
-        }
+
+
+
+
+
+
+    /* Control */
+    .control{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
+        border-radius: 0;
+        z-index: 2;
+    }
+    .adelante{
+        color: white;
+        margin-left: 10%;
+        font-size: 20px;
+
+    }
+    .menu{
+        color: white;
+        margin: 0 30px 0 0;
+        margin-left: 10%;
+        font-size: 20px;
+
+    }
+    .atras{
+        color: white;
+        margin: 0 30px 0 0;
+        margin-left: 10%;
+        font-size: 20px;
+
+    }
+    .arribaPag{
+        color: white;
+        margin: 0 0 0 0;
+        margin-left: 10%;
+        font-size: 20px;
+
+    }
+
+    /* pagina */
+    .pagina{
+        /* float: left;
+        width: 800px;
+        height: 1200px;
+        padding: 0 0 10px 30%; */
+    
+        /* Evita la descarga/arrastrar/copy¬paste de los capitulos */
+        pointer-events: none;
         
-            #website{
-                font-size: 80%;
-                left: 0%;
-                margin-left: 40px;
-            }
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-            #explorar{
-                font-size: 80%;
-                left: 0%;
-                margin-left: 300px;
-            }
-
-            #siguenos{
-                font-size: 80%;
-                left: 0%;
-                margin: 180px 0 0 40px;
-            }
-
-                #siguenos img{
-                    height: 50px;
-                    width: 50px;
-                }
-
-            #contenido{
-                font-size: 80%;
-                left: 0%;
-                margin: 180px 0 0 300px;
-            }
-                #contenido p{
-                    margin-bottom: 20px;
-                }
-
-        #copyright{ 
-            font-size: 60%;
+    footer article ul li{
+        margin-bottom: 12px;
+    }
+    
+        #website{
+            font-size: 80%;
+            left: 0%;
+            margin:20px 0 0 38%;
         }
+
+        #explorar{
+            font-size: 80%;
+            left: 0%;
+            margin: 180px 0 0 45%;
+        }
+
+        #siguenos{
+            font-size: 80%;
+            left: 0%;
+            margin: 360px 0 0 28%;
+        }
+
+            #siguenos img{
+                height: 50px;
+                width: 50px;
+            }
+
+        #contenido{
+            font-size: 80%;
+            left: 0%;
+            width: 200px;
+            text-align: center;
+            margin: 520px 0 0 30%;
+        }
+            #contenido p{
+                margin-bottom: 20px;
+            }
+
+    #copyright{ 
+        font-size: 60%;
+    }
 }

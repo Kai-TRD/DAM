@@ -150,12 +150,13 @@ header{
     mix-blend-mode: lighten;
 }
 
-header div{
-    position: absolute;
+header div {
+    position: fixed;
     right: 0;
-    height: 150px;
-    width: 140px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 40%, rgb(255, 255, 255) 60%);
+    height: 100%;
+    width: 54px;
+    background-color: #ff6565;
+    z-index: 999;
 }
 
 
@@ -309,9 +310,9 @@ header h1{
 
 /* AVATAR */
 .avatar img{
-    height: 220px;
+    height: 150px;
     border-radius: 100%;
-    margin: 50px 0 30px 90px;
+    margin: 30px 0 30px 30%;
     float: left;
     box-shadow:
     0 0 2px rgb(255, 255, 255),
@@ -328,9 +329,11 @@ header h1{
     position: absolute;
     font-weight: 600;
     font-size: large;
+    width: 100%;
     left: 0;
-    top: 230px;
-    padding: 10px 100% 10px 20px;
+    top: 190px;
+    text-align: center;
+    padding: 5px 0 5px 0;
     background-color: rgba(0, 0, 0, 0.553);
     z-index: -1;
 
@@ -427,7 +430,6 @@ aside {
     width: 13%;
     border-right: 5px solid white;
     height: 100%;
-    margin-left: 30px;
 }
 
 aside ul{
@@ -668,8 +670,9 @@ footer article ul li{
                 font-size: small;
                 margin-top: 70px;
             }
-        header div{
-            padding-bottom: 100px;
+
+        header div {
+            width: 40px;
         }
 
 
@@ -750,6 +753,15 @@ footer article ul li{
 
 
 
+        #arriba{
+            right: 5px;
+        }
+            #arriba img{
+                height: 30px;
+                width: 30px;
+            }
+
+
     /* LATERAL DISPLAY */
         #opcionMovil{
             display: none;
@@ -817,16 +829,16 @@ footer article ul li{
             /* border-right: #fff solid 1px; */
         }
 
-        main article{
-            height: 218px;
-            width: 145px;
+        main article {
+            height: 190px;
+            width: 130px;
             padding: 8px 0 0 0;
-            overflow-y:hidden;
+            overflow-y: hidden;
             margin: 0 10px 20px 0;
         }
 
-        main article h4{
-            width: 145px;
+        main article h4 {
+            width: 130px;
             font-size: 12px;
         }
 
@@ -882,18 +894,26 @@ footer article ul li{
         display: none;
     }
 
-    aside{
-        position: fixed;
-        width: 80px;
-        right: 0;
-        top: 0;
-        background: linear-gradient(to right, rgba(0, 0, 0, 0) 20% ,#ffffff 40%);
-
+    header div{
+        display: none;
     }
 
+    aside{
+        position: fixed;
+        width: 45px;
+        right: 0;
+        top: 0;
+        background-color: #ff6565;
+    }
+
+
+
+
+
+    
     label i{
         font-size: 150%;
-        margin: 80px 10px 0 0;
+        margin: 80px 12px 0 0;
     }
     #mainNav ul{
         display: none;
@@ -905,7 +925,13 @@ footer article ul li{
 
     #arriba{
         z-index: 1;
+        right: 12px;
     }
+        #arriba img{
+            height: 30px;
+            width: 30px;
+        }
+
 
     #search{
         position: absolute; 
