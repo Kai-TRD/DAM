@@ -884,6 +884,8 @@ footer article ul li{
         margin: 0 0 0 15%;
     }
 
+
+    
     /* Control */
     .control{
         position: fixed;
@@ -1031,6 +1033,9 @@ footer article ul li{
         padding: 5px 50% 5px 20px;
     }
 
+    
+    
+    /* USER ZONE */
     .userZone {
         margin: 0px 5px 20px 12%;
         width: 75%;
@@ -1039,12 +1044,19 @@ footer article ul li{
 
     .userZone div{
         margin: 20px 0 0 5px;
+        width: 140px;
+        
     }
     .userSocial a img {
         width: 20%;
         height: 9%;
         margin: 10px 0 0 9%;
     }
+
+
+
+
+
 
 
     /* LATERAL DISPLAY */
