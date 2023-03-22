@@ -3,7 +3,7 @@
 Proyecto de lenguaje de marcas
 ## Autor
 * Kai
-## Table of contents
+## Fuentes
 * [LectorMO](https://lectortmo.com/)
 * [NineManga](https://my.ninemanga.com/)
 * [Olympus Scans](https://olympusscans.com/)
