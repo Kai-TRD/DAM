@@ -5,5 +5,6 @@ Proyecto de lenguaje de marcas
 * Kai
 ## Table of contents
 * [LectorMO](https://lectortmo.com/)
-* [Technologies](#technologies)
-* [Setup](#setup)
+* [NineManga](https://my.ninemanga.com/)
+* [Olympus Scans](https://olympusscans.com/)
+* [Phoenix Fansub](https://phoenixfansub.com/)
