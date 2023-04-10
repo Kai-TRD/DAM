@@ -44,52 +44,6 @@
 }
 
 
-
-
-
-/* error */
-
-
-.error {
-    height: 800px;
-}
-
-.error section {
-    position: absolute;
-    left: 33%;
-    top: 25%;
-    width: 33%;
-    height: 60%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-.error section h1 {
-    position: relative;
-    top: 20px;
-    left: 30px;
-    font-size: 60px;
-}
-
-.error section p {
-    position: relative;
-    top: 50px;
-    left: 30px;
-    font-size: 30px;
-}
-
-.error section img {
-    position: relative;
-    top: 12%;
-    left: 5%;
-    width: 90%;
-    height: 60%;
-}
-
-
-
-
-
 .neonText {
     animation: flicker 1.5s infinite alternate;
     color: #fff;
