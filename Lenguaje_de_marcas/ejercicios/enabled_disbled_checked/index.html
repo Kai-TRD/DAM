@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #acepto:checked+label {
+            background-color: gold;
+            font-weight: bold;
+        }
+
+        #hombre:checked+label,
+        #mujer:checked+label {
+            font-style: italic;
+        }
+
+        :enabled {
+            background-color: lightgreen;
+        }
+
+        :disabled {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" method="#" action="#">
+        <p>
+            <label for="nombre">Su nombre y apellidos: </label>
+            <input type="text" id="nombre" />
+        </p>
+        <p>
+            <label for="edad">Su edad: </label>
+            <input type="text" id="edad" disabled="disabled" />
+        </p>
+        <p>
+            <input type="radio" name="sexo" id="hombre" value="hombre" />
+            <label for="hombre">hombre</label><br />
+            <input type="radio" name="sexo" id="mujer" value="mujer" />
+            <label for="mujer">mujer</label>
+        </p>
+        <p>
+            <input type="checkbox" id="acepto" />
+            <label for="acepto">Acepto las condiciones de uso.</label>
+        </p>
+    </form>
+</body>
+
+</html>
