@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaK Sign In</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/formulario.css">
+    <link rel="icon" href="images/iconos/icon.ico" type="ico">
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Titulo / header -->
+    <header>
+        <h1 id="inicioPagina" class="neonText"><a href="index.html">Sign In</a></h1>
+        <p>"Inicia sesion en la pagina o crea perfil"</p>
+    </header>
+
+
+
+    <form class="formulario" action="/signIn" method="post">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9_]{3,15}" title="El nombre de usuario debe contener entre 3 y 15 caracteres alfanuméricos." required>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Por favor ingrese una dirección de correo electrónico válida." required>
+        <br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}" title="La contraseña debe contener al menos 8 caracteres, incluyendo al menos una letra minúscula, una letra mayúscula y un número." required>
+        <br>
+        <label for="confirmPassword">Confirmar contraseña:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+        <br>
+        <label for="notifications">Recibir notificaciones:</label>
+        <input type="checkbox" id="notifications" name="notifications">
+        <br>
+        <input type="submit" value="Crear cuenta">
+    </form>
+
+
+    <!-- Footer pag sim -->
+    <footer>
+        <article id="website">
+            <h4>Website</h4>
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Nuestros servicios</a></li>
+                <li><a href="#">Politica de privacidad</a></li>
+            </ul>
+        </article>
+
+        <article id="explorar">
+            <h4>Exploral</h4>
+            <ul>
+                <li><a href="#">Biblioteca</a></li>
+                <li><a href="#">Grupos</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+            </ul>
+        </article>
+
+        <article id="siguenos">
+            <h4>Siguenos</h4>
+            <a href="#"><img src="images/iconos/facebookIcon.png" alt=""></a>
+            <a href="#"><img src="images/iconos/twitterIcon.png" alt=""></a>
+            <a href="#"><img src="images/iconos/InstagramIcon.png" alt=""></a>
+            <a href="#"><img src="images/iconos/discrodIcon.png" alt=""></a>
+        </article>
+
+        <article id="contenido">
+            <h4>Contenidos</h4>
+            <p>
+                MangaK no realiza las traducciones aquí publicadas y solo es un repositorio con visor propio para que se
+                puedan leer de forma comoda las obras.
+            </p>
+        </article>
+        <!-- copyright -->
+        <article id="copyright">&copy; 2022 MangaK</article>
+
+    </footer>
+</body>
+
+</html>
