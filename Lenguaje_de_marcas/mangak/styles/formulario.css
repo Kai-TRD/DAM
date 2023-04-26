@@ -35,7 +35,7 @@ input[type="email"] {
     padding: 10px 10px 20px 10px;
     margin-bottom: 10px;
     border: none;
-    border-bottom: 1px solid #929292;
+    border-bottom: 2px solid #929292;
     outline: none;
 }
 
@@ -66,17 +66,86 @@ input[value="Registrarse"] {
 }
 
 input:focus:invalid {
-    background-color: red;
+    border-color: red;
 }
 
 input:focus:valid {
-    background-color: greenyellow;
+    border-color: greenyellow;
 }
 
 
 
+.aviso {
+    display: none;
+    position: absolute;
+
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(255, 255, 255),
+        0 0 10px rgb(255, 255, 255),
+        0 0 10px rgb(255, 0, 98),
+        0 0 12px rgb(255, 0, 98),
+        0 0 25px rgb(255, 0, 98),
+        0 0 30px rgb(255, 0, 98);
+    ;
 
 
+    left: 20%;
+    top: 400px;
+}
+
+#username:focus+#avisoUsername {
+    display: block;
+}
+
+#username:focus:valid+#avisoUsername {
+    display: none;
+}
+
+#username:focus:valid,
+#email:focus:valid,
+#password:focus:valid {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Check_green_icon.svg/2048px-Check_green_icon.svg.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right 20px center;
+
+}
+
+#username:focus:invalid,
+#email:focus:invalid,
+#password:focus:invalid {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cross_red_circle.svg/2048px-Cross_red_circle.svg.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right 20px center;
+}
+
+#email:focus+#avisoEmail {
+    display: block;
+}
+
+#email:focus:valid+#avisoEmail {
+    display: none;
+}
+
+#password:focus+#avisoPassword {
+    display: block;
+}
+
+#password:focus:valid+#avisoPassword {
+    display: none;
+}
+
+
+/* #passwordRepit:focus+#avisoPasswordRepit {
+    display: block;
+}
+#passwordRepit:focus:valid+#avisoPasswordRepit {
+    display: none;
+} */
 
 
 

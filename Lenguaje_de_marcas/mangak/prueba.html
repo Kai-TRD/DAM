@@ -7,29 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
-        .prueba {
-            display: block;
-        }
-        input[type="text"]:valid+.prueba {
-            /* Estilos para el elemento con clase "prueba" que sigue inmediatamente después del input con valor válido */
-            background-color: green;
-        }
-
-        input[type="text"]:invalid+.prueba {
-            /* Estilos para el elemento con clase "prueba" que sigue inmediatamente después del input con valor válido */
+        .aviso {
             display: none;
-            background-color: red;
+        }
+
+        input:focus+.aviso {
+            display: block;
         }
     </style>
 </head>
 
 <body>
-    <input type="text" id="username" placeholder="Usuario" name="username" pattern="[a-zA-Z0-9\-_]{3,16}" required>
-    <div class="prueba">
-        <p>hola</p>
-        <br>
-        <p>esto es incorrecto</p>
+    <div class="formulario">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <p class="aviso">¡Estás escribiendo en el campo de nombre!</p>
     </div>
 </body>
 
