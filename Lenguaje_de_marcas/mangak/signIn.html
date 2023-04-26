@@ -22,25 +22,38 @@
     </header>
 
 
+    <div class="contenedor">
+        <h1>Registrarse</h1>
+        <form class="formulario" action="/registro" method="post">
 
-    <form class="formulario" action="/signIn" method="post">
-        <label for="username">Nombre de usuario:</label>
-        <input type="text" id="username" name="username" pattern="[a-zA-Z0-9_]{3,15}" title="El nombre de usuario debe contener entre 3 y 15 caracteres alfanuméricos." required>
-        <br>
-        <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Por favor ingrese una dirección de correo electrónico válida." required>
-        <br>
-        <label for="password">Contraseña:</label>
-        <input type="password" id="password" name="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}" title="La contraseña debe contener al menos 8 caracteres, incluyendo al menos una letra minúscula, una letra mayúscula y un número." required>
-        <br>
-        <label for="confirmPassword">Confirmar contraseña:</label>
-        <input type="password" id="confirmPassword" name="confirmPassword" required>
-        <br>
-        <label for="notifications">Recibir notificaciones:</label>
-        <input type="checkbox" id="notifications" name="notifications">
-        <br>
-        <input type="submit" value="Crear cuenta">
-    </form>
+            <!-- nombre usuario -->
+            <input type="text" id="username" placeholder="Usuario" name="username" 
+                pattern="[a-zA-Z0-9\-_]{3,16}" required>
+
+            <p class="prueba">Patron de nombre de usuario incorrecta</p>
+
+            <!-- email -->
+            <input type="email" id="email" placeholder="Correo electrónico" name="email" required>
+
+            <!-- Contraseña -->
+            <input type="password" id="password" placeholder="Contraseña" name="password"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!.*\s)[a-zA-Z\d#$@!%&*?]{8,16}" required>
+            
+
+            <!-- Repetir contraseña -->
+            <input type="password" id="password" placeholder="Contraseña" name="password"
+                pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])(?!.*\s)[a-zA-Z\d#$@!%&*?]{8,16}" required>
+
+            <!-- Boton de regustro -->
+            <input type="submit" value="Registrarse">
+        </form>
+        <p id="textoFormulario">¿Ya tienes cuenta? <a id="loggin" href="loggin.html">Inicia sesión</a></p>
+    </div>
+
+
+
+
+
 
 
     <!-- Footer pag sim -->

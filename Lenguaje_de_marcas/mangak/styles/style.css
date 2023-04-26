@@ -354,21 +354,6 @@ label i:hover {
     right:0;
 }
 
-    /* Log put bottom */
-    #loggin {
-        background-color: #69ff6e;
-    }
-    
-    #logout{
-        position: relative;
-        top: 35%;
-        background-color: #ee436d;
-    }
-
-    #logout:hover{
-        background-color: #d81444;
-    }
-
 /**Aside**/
 aside {
     text-decoration: none ;
