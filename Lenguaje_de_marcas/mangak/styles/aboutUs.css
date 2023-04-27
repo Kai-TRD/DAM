@@ -1,0 +1,21 @@
+
+
+.aboutUs {
+    height: 800px;
+}
+
+.aboutUs section {
+background-color: white;
+}
+
+.aboutUs section h1 {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    font-size: 60px;
+}
+
+.aboutUs section p {
+
+    font-size: 28px;
+}

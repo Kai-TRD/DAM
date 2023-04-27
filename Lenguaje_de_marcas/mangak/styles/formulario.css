@@ -96,9 +96,7 @@ input:focus:valid {
     top: 400px;
 }
 
-#username:focus+#avisoUsername {
-    display: block;
-}
+
 
 #username:focus:valid+#avisoUsername {
     display: none;
@@ -123,20 +121,30 @@ input:focus:valid {
     background-position: right 20px center;
 }
 
+#username:focus+#avisoUsername {
+    display: block;
+    z-index: -1;
+
+}
+
 #email:focus+#avisoEmail {
     display: block;
+    z-index: -1;
 }
 
 #email:focus:valid+#avisoEmail {
     display: none;
+    z-index: -1;
 }
 
 #password:focus+#avisoPassword {
     display: block;
+    z-index: -1;
 }
 
 #password:focus:valid+#avisoPassword {
     display: none;
+    z-index: -1;
 }
 
 
@@ -162,4 +170,16 @@ input:focus:valid {
 #signIn:hover,
 #loggin:hover {
     text-decoration: underline;
+}
+
+#notificacion {
+    margin-top: 12px;
+    float: left;
+}
+
+#notificacionTexto {
+    margin: 10px;
+
+    float: left;
+
 }
