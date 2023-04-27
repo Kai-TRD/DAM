@@ -34,11 +34,30 @@ insert into visitas values ('1234CFS', '2022/11/05', 3482);
 drop procedure if exists actualiza_puntos
 create procedure actualiza_puntos()
 begin
-    declare done int default false;
-    declare
-
-
-
-
-
-
+    declare done int;
+    declare var_id_matricula char(7);
+    declare var_id_matricula2 char(7);
+    declare var_importe_matricula decimal(7,2);
+    declare cursor_vehiculos cursor from select id_matricula from vehiculo;
+    declare cursor_visitas cursor from select id_matricula, importe_factura from visitas;
+    declare continue handler for not found set done = true;
+    open cursor_vehiculos;
+    bucle_vehiculos: loop;
+        fetch cursor_vehiculos into var_id_matricula;
+        if done then
+            leave bucle_vehiculos;
+        end if;
+        open cursor visitas;
+        bucle_visitas: loop;
+            fectch cursor_visitas into var_id_matricula2, var_importe_factura;
+            if done then
+                leave bucle_visitas;
+            end if:
+            if var_id_matricula2 = var_id_matricula then
+                update vehiculo set puntos = puntos + round(var_importe_factura / 10, 0) where (var_id_matricula = var_id_matricula2);
+            end if;
+        end loop bucle_visitas;
+        close cursor_visitas;
+    end loop bucle_vehiculos;
+    close cursor_vehiculos;
+end;
