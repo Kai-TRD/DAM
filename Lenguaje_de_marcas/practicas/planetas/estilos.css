@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 15px 0;
+    text-align: center;
+}
+
+table {
+    width: 40%;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 10px;
+    border: black 1px solid;
+    text-align: left;
+}
+
+th {
+    width: 40%;
+    background-color: lightgray;
+}
+
+td {
+    width: 60%;
+}
