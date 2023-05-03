@@ -1,0 +1,185 @@
+body {
+    background-color: black;
+}
+
+/* logging */
+
+
+.contenedor {
+    width: 300px;
+    margin: 190px auto 330px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(255, 255, 255),
+        0 0 10px rgb(255, 255, 255),
+        0 0 10px rgb(255, 0, 98),
+        0 0 12px rgb(255, 0, 98),
+        0 0 25px rgb(255, 0, 98),
+        0 0 30px rgb(255, 0, 98);
+    ;
+}
+
+h1 {
+    text-align: center;
+}
+
+.formulario {
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 2px solid #929292;
+    outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #929292;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(218, 81, 109);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: crimson;
+}
+
+
+input[value="Registrarse"] {
+    color: white;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+input:focus:invalid {
+    border-color: red;
+}
+
+input:focus:valid {
+    border-color: greenyellow;
+}
+
+
+
+.aviso {
+    display: none;
+    position: absolute;
+
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 2px rgb(255, 255, 255),
+        0 0 10px rgb(255, 255, 255),
+        0 0 10px rgb(255, 0, 98),
+        0 0 12px rgb(255, 0, 98),
+        0 0 25px rgb(255, 0, 98),
+        0 0 30px rgb(255, 0, 98);
+    ;
+
+
+    left: 20%;
+    top: 400px;
+}
+
+
+
+#username:focus:valid+#avisoUsername {
+    display: none;
+}
+
+#username:focus:valid,
+#email:focus:valid,
+#password:focus:valid {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Check_green_icon.svg/2048px-Check_green_icon.svg.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right 20px center;
+
+}
+
+#username:focus:invalid,
+#email:focus:invalid,
+#password:focus:invalid {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cross_red_circle.svg/2048px-Cross_red_circle.svg.png);
+    background-repeat: no-repeat;
+    background-size: 10%;
+    background-position: right 20px center;
+}
+
+#username:focus+#avisoUsername {
+    display: block;
+    z-index: -1;
+
+}
+
+#email:focus+#avisoEmail {
+    display: block;
+    z-index: -1;
+}
+
+#email:focus:valid+#avisoEmail {
+    display: none;
+    z-index: -1;
+}
+
+#password:focus+#avisoPassword {
+    display: block;
+    z-index: -1;
+}
+
+#password:focus:valid+#avisoPassword {
+    display: none;
+    z-index: -1;
+}
+
+
+/* #passwordRepit:focus+#avisoPasswordRepit {
+    display: block;
+}
+#passwordRepit:focus:valid+#avisoPasswordRepit {
+    display: none;
+} */
+
+
+
+#textoFormulario {
+    text-align: center;
+}
+
+#signIn,
+#loggin {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#signIn:hover,
+#loggin:hover {
+    text-decoration: underline;
+}
+
+#notificacion {
+    margin-top: 12px;
+    float: left;
+}
+
+#notificacionTexto {
+    margin: 10px;
+
+    float: left;
+
+}

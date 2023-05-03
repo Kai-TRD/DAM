@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:required {
+            background-color: lightcoral;
+        }
+
+        input:optional {
+            background-color: lightgoldenrodyellow;
+        }
+
+        input:focus {
+            outline: solid 3px green;
+            outline-offset: 2px;
+        }
+
+        input#enviar {
+            background: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" method="#" action="#">
+        <p>
+            <label for="nombre">Su nombre y apellidos: </label>
+            <input type="text" name="nombre" id="nombre" required />
+        </p>
+        <p>
+            <label for="edad">Su edad: </label>
+            <input type="text" name="edad" id="edad" />
+        </p>
+        <p>
+            <input type="submit" id="enviar" value="Enviar" />
+        </p>
+    </form>
+</body>
+
+</html>

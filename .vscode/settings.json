@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/kai/Descargas/mysql-connector-j_8.0.32-1ubuntu22.04_all/usr/share/java/mysql-connector-j-8.0.32.jar"
+    ]
+}
