@@ -51,10 +51,9 @@ ON saltos FOR EACH ROW
     BEGIN
         UPDATE deportistas_saltos
         SET mejor_salto = (
-            SELECT MAX(marca)
-            FROM saltos
-            WHERE id_deportista = NEW.id_deportista
+            SELECT MAX(marca) FROM saltos WHERE id_deportista = NEW.id_deportista
         )
+        
         WHERE id_deportista = NEW.id_deportista;
     END //
 DELIMITER ;
