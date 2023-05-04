@@ -13,9 +13,10 @@ USE tokio_2020;
 CREATE TABLE deportistas_saltos (
     id_deportista int primary key,
     nombre varchar(30),
-	pais varchar(3),
-	mejor_marca_personal decimal(3,2)
+    pais varchar(3),
+    mejor_marca_personal decimal(3,2)
 );
+
 CREATE TABLE saltos (
     id_deportista int,
     id_salto int,
@@ -28,7 +29,7 @@ INSERT INTO deportistas_saltos VALUES (2, 'Thiago Braz', 'BRA', 6.03);
 INSERT INTO deportistas_saltos VALUES (3, 'Igor Potapovich', 'KAZ', 5.99);
 INSERT INTO deportistas_saltos VALUES (4, 'Brad Walker', 'USA', 6.12);
 
-SELECT * from deportistas_saltos;
+SELECT * FROM deportistas_saltos;
 
 INSERT INTO saltos VALUES (1,1, 6.01);
 INSERT INTO saltos VALUES (1,2, 6.24);
@@ -43,7 +44,19 @@ INSERT INTO saltos VALUES (4,1, 6.10);
 INSERT INTO saltos VALUES (4,2, 6.17);
 INSERT INTO saltos VALUES (4,3, 6.01);
 
-SELECT * from deportistas_saltos;
+DELIMITER //
+CREATE TRIGGER actualizar_saltos
+AFTER UPDATE
+ON saltos FOR EACH ROW
+    BEGIN
+        UPDATE deportistas_saltos
+        SET mejor_salto = (
+            SELECT MAX(marca)
+            FROM saltos
+            WHERE id_deportista = NEW.id_deportista
+        )
+        WHERE id_deportista = NEW.id_deportista;
+    END //
+DELIMITER ;
 
-
-
+SELECT * FROM deportistas_saltos;
