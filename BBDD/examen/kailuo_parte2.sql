@@ -50,7 +50,7 @@ AFTER UPDATE
 ON saltos FOR EACH ROW
     BEGIN
         UPDATE deportistas_saltos
-        SET mejor_salto = (
+        SET mejor_marca_personal = (
             SELECT MAX(marca) FROM saltos WHERE id_deportista = NEW.id_deportista
         )
         
