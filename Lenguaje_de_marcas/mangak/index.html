@@ -1,315 +1,318 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MangaK</title>
-        <link rel="stylesheet" href="styles/style.css"/>
-        <link rel="icon" href="images/iconos/icon.ico" type="ico">
-        <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-    </head>
 
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MangaK</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/iconos/icon.ico" type="ico">
+    <link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
 
-        <!-- Titulo / header -->
-        <header>
-            <h1 id="inicioPagina" class="neonText"><a href="index.html">MANGAK</a></h1>
-            <p>"Just relax and read "</p>
+<body>
 
-            <!-- Desgradado debajo del label -->
-            <div></div>
-        </header>
+    <!-- Titulo / header -->
+    <header>
+        <h1 id="inicioPagina" class="neonText"><a href="index.html">MANGAK</a></h1>
+        <p>"Just relax and read"</p>
 
-        <!-- cat -->
-        <!-- <img id="cat" src="https://raw.githubusercontent.com/gist/brudnak/aba00c9a1c92d226f68e8ad8ba1e0a40/raw/e1e4a92f6072d15014f19aa8903d24a1ac0c41a4/nyan-cat.gif" alt=""> -->
+        <!-- Desgradado debajo del label -->
+        <div></div>
+    </header>
 
-        <!-- Icono para ir hacia arriba -->
-        <a id="arriba" href="#inicioPagina">
-            <img  src="images/iconos/flechaArriba.png" alt="">
-        </a>
+    <!-- cat -->
+    <!-- <img id="cat" src="https://raw.githubusercontent.com/gist/brudnak/aba00c9a1c92d226f68e8ad8ba1e0a40/raw/e1e4a92f6072d15014f19aa8903d24a1ac0c41a4/nyan-cat.gif" alt=""> -->
 
-        <!-- Barra de navegacion -->
-        <nav id="mainNav">
-            <ul>
+    <!-- Icono para ir hacia arriba -->
+    <a id="arriba" href="#inicioPagina">
+        <img src="images/iconos/flechaArriba.png" alt="">
+    </a>
+
+    <!-- Barra de navegacion -->
+    <nav id="mainNav">
+        <ul>
+            <li><a href="error.html">Populares</a></li>
+            <li><a href="error.html">Nuevos</a></li>
+            <li><a href="error.html">Géneros</a>
+                <!-- Desplegable / Generos -->
+                <ul class="generos">
+                    <li><input type="checkbox" id="gender1"> <label for="gender1">Acción</label></li>
+                    <li><input type="checkbox" id="gender2"> <label for="gender2">Aventura</label></li>
+                    <li><input type="checkbox" id="gender3"> <label for="gender3">Comedia</label></li>
+                    <li><input type="checkbox" id="gender4"> <label for="gender4">Drama</label></li>
+                    <li><input type="checkbox" id="gender5"> <label for="gender5">Life Record</label></li>
+                    <li><input type="checkbox" id="gender6"> <label for="gender6">Ecchi</label></li>
+                    <li><input type="checkbox" id="gender7"> <label for="gender7">Fantasia</label></li>
+                    <li><input type="checkbox" id="gender8"> <label for="gender8">Magia</label></li>
+                    <li><input type="checkbox" id="gender9"> <label for="gender9">Sobrenatural</label></li>
+                    <li><input type="checkbox" id="gender10"> <label for="gender10">Horror</label></li>
+                    <li><input type="checkbox" id="gender11"> <label for="gender11">Misterio</label></li>
+                    <li><input type="checkbox" id="gender12"> <label for="gender12">Psicológico</label></li>
+                    <li><input type="checkbox" id="gender13"> <label for="gender13">Romance</label></li>
+                    <li><input type="checkbox" id="gender14"> <label for="gender14">SciFi</label></li>
+                    <li><input type="checkbox" id="gender15"> <label for="gender15">Thriller</label></li>
+                    <li><input type="checkbox" id="gender16"> <label for="gender16">Deporte</label></li>
+                    <li><input type="checkbox" id="gender17"> <label for="gender17">Girls Love</label></li>
+                    <li><input type="checkbox" id="gender18"> <label for="gender18">Boys Love</label></li>
+                    <li><input type="checkbox" id="gender19"> <label for="gender19">Harem</label></li>
+                    <li><input type="checkbox" id="gender20"> <label for="gender20">Mecha</label></li>
+                    <li><input type="checkbox" id="gender21"> <label for="gender21">Supervivencia</label></li>
+                    <li><input type="checkbox" id="gender22"> <label for="gender22">Reencarnación</label></li>
+                    <li><input type="checkbox" id="gender23"> <label for="gender23">Gore</label></li>
+                    <li><input type="checkbox" id="gender24"> <label for="gender24">Apocalíptico</label></li>
+                    <li><input type="checkbox" id="gender25"> <label for="gender25">Tragedia</label></li>
+                    <li><input type="checkbox" id="gender26"> <label for="gender26">Vida Escolar</label></li>
+                    <li><input type="checkbox" id="gender27"> <label for="gender27">Historia</label></li>
+                    <li><input type="checkbox" id="gender28"> <label for="gender28">Militar</label></li>
+                    <li><input type="checkbox" id="gender29"> <label for="gender29">Policiaco</label></li>
+                    <li><input type="checkbox" id="gender30"> <label for="gender30">Crimen</label></li>
+                    <li><input type="checkbox" id="gender31"> <label for="gender31">Superpoderes</label></li>
+                    <li><input type="checkbox" id="gender32"> <label for="gender32">Vampiros</label></li>
+                    <li><input type="checkbox" id="gender33"> <label for="gender33">Artes Marciales</label></li>
+                    <li><input type="checkbox" id="gender34"> <label for="gender34">Samurái</label></li>
+                    <li><input type="checkbox" id="gender35"> <label for="gender35">G.Bender</label></li>
+                    <li><input type="checkbox" id="gender36"> <label for="gender36">VR</label></li>
+                    <li><input type="checkbox" id="gender37"> <label for="gender37">Ciberpunk</label></li>
+                    <li><input type="checkbox" id="gender38"> <label for="gender38">Musica</label></li>
+                    <li><input type="checkbox" id="gender39"> <label for="gender39">Parodia</label></li>
+                    <li><input type="checkbox" id="gender40"> <label for="gender40">Animación</label></li>
+                    <li><input type="checkbox" id="gender41"> <label for="gender41">Demonios</label></li>
+                    <li><input type="checkbox" id="gender42"> <label for="gender42">Familia</label></li>
+                    <li><input type="checkbox" id="gender43"> <label for="gender43">Extranjero</label></li>
+                    <li><input type="checkbox" id="gender44"> <label for="gender44">Niños</label></li>
+                    <li><input type="checkbox" id="gender45"> <label for="gender45">Realidad</label></li>
+                    <li><input type="checkbox" id="gender46"> <label for="gender46">Telenovela</label></li>
+                    <li><input type="checkbox" id="gender47"> <label for="gender47">Guerra</label></li>
+                    <li><input type="checkbox" id="gender48"> <label for="gender48">Oeste</labe>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="error.html">Noticias </a></li>
+            <li><a href="error.html">Biblioteca </a></li>
+        </ul>
+
+        <!-- Barra de busqueda -->
+        <div id="search">
+            <input id="searchBar" type="search" placeholder="Search...">
+            <label for="searchBar">
+                <img src="images/iconos/lupa.png" alt="">
+            </label>
+
+        </div>
+    </nav>
+
+
+    <!-- LATERAL DISPLAY -->
+    <nav id="cuentaLateral">
+
+        <input type="checkbox" id="check">
+
+        <ul>
+            <!-- 3 rayas del laterañ display -->
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+
+            <!-- Contenido/EDITAR -->
+
+            <!-- Avatar -->
+            <section class="avatar">
+                <p>Kai</p>
+                <!-- <img src="images/iconos/userAvatar.jpg" alt=""> -->
+                <img src="https://www.nicepng.com/png/detail/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="">
+            </section>
+
+            <li><a href="error.html">Perfil</a></li>
+            <li><a href="error.html">Biblioteca</a></li>
+            <li><a href="error.html">Privacy Policy</a></li>
+            <li><a href="error.html">User Setings</a></li>
+            <section id="opcionMovil">
                 <li><a href="error.html">Populares</a></li>
                 <li><a href="error.html">Nuevos</a></li>
-                <li><a href="error.html">Géneros</a>
-                    <!-- Desplegable / Generos -->
-                    <ul class="generos">
-                        <li><input type="checkbox" id="gender1"> <label for="gender1">Acción</label></li>
-                        <li><input type="checkbox" id="gender2"> <label for="gender2">Aventura</label></li>
-                        <li><input type="checkbox" id="gender3"> <label for="gender3">Comedia</label></li>
-                        <li><input type="checkbox" id="gender4"> <label for="gender4">Drama</label></li>
-                        <li><input type="checkbox" id="gender5"> <label for="gender5">Life Record</label></li>
-                        <li><input type="checkbox" id="gender6"> <label for="gender6">Ecchi</label></li>
-                        <li><input type="checkbox" id="gender7"> <label for="gender7">Fantasia</label></li>
-                        <li><input type="checkbox" id="gender8"> <label for="gender8">Magia</label></li>
-                        <li><input type="checkbox" id="gender9"> <label for="gender9">Sobrenatural</label></li>
-                        <li><input type="checkbox" id="gender10"> <label for="gender10">Horror</label></li>
-                        <li><input type="checkbox" id="gender11"> <label for="gender11">Misterio</label></li>
-                        <li><input type="checkbox" id="gender12"> <label for="gender12">Psicológico</label></li>
-                        <li><input type="checkbox" id="gender13"> <label for="gender13">Romance</label></li>
-                        <li><input type="checkbox" id="gender14"> <label for="gender14">SciFi</label></li>
-                        <li><input type="checkbox" id="gender15"> <label for="gender15">Thriller</label></li>
-                        <li><input type="checkbox" id="gender16"> <label for="gender16">Deporte</label></li>
-                        <li><input type="checkbox" id="gender17"> <label for="gender17">Girls Love</label></li>
-                        <li><input type="checkbox" id="gender18"> <label for="gender18">Boys Love</label></li>
-                        <li><input type="checkbox" id="gender19"> <label for="gender19">Harem</label></li>
-                        <li><input type="checkbox" id="gender20"> <label for="gender20">Mecha</label></li>
-                        <li><input type="checkbox" id="gender21"> <label for="gender21">Supervivencia</label></li>
-                        <li><input type="checkbox" id="gender22"> <label for="gender22">Reencarnación</label></li>
-                        <li><input type="checkbox" id="gender23"> <label for="gender23">Gore</label></li>
-                        <li><input type="checkbox" id="gender24"> <label for="gender24">Apocalíptico</label></li>
-                        <li><input type="checkbox" id="gender25"> <label for="gender25">Tragedia</label></li>
-                        <li><input type="checkbox" id="gender26"> <label for="gender26">Vida Escolar</label></li>
-                        <li><input type="checkbox" id="gender27"> <label for="gender27">Historia</label></li>
-                        <li><input type="checkbox" id="gender28"> <label for="gender28">Militar</label></li>
-                        <li><input type="checkbox" id="gender29"> <label for="gender29">Policiaco</label></li>
-                        <li><input type="checkbox" id="gender30"> <label for="gender30">Crimen</label></li>
-                        <li><input type="checkbox" id="gender31"> <label for="gender31">Superpoderes</label></li>
-                        <li><input type="checkbox" id="gender32"> <label for="gender32">Vampiros</label></li>
-                        <li><input type="checkbox" id="gender33"> <label for="gender33">Artes Marciales</label></li>
-                        <li><input type="checkbox" id="gender34"> <label for="gender34">Samurái</label></li>
-                        <li><input type="checkbox" id="gender35"> <label for="gender35">G.Bender</label></li>
-                        <li><input type="checkbox" id="gender36"> <label for="gender36">VR</label></li>
-                        <li><input type="checkbox" id="gender37"> <label for="gender37">Ciberpunk</label></li>
-                        <li><input type="checkbox" id="gender38"> <label for="gender38">Musica</label></li>
-                        <li><input type="checkbox" id="gender39"> <label for="gender39">Parodia</label></li>
-                        <li><input type="checkbox" id="gender40"> <label for="gender40">Animación</label></li>
-                        <li><input type="checkbox" id="gender41"> <label for="gender41">Demonios</label></li>
-                        <li><input type="checkbox" id="gender42"> <label for="gender42">Familia</label></li>
-                        <li><input type="checkbox" id="gender43"> <label for="gender43">Extranjero</label></li>
-                        <li><input type="checkbox" id="gender44"> <label for="gender44">Niños</label></li>
-                        <li><input type="checkbox" id="gender45"> <label for="gender45">Realidad</label></li>
-                        <li><input type="checkbox" id="gender46"> <label for="gender46">Telenovela</label></li>
-                        <li><input type="checkbox" id="gender47"> <label for="gender47">Guerra</label></li>
-                        <li><input type="checkbox" id="gender48"> <label for="gender48">Oeste</labe></li>
-                    </ul>
-                </li>
+                <li><a href="error.html">Géneros</a></li>
                 <li><a href="error.html">Noticias </a></li>
-                <li><a href="error.html">Biblioteca </a></li>
-            </ul>
-            
-            <!-- Barra de busqueda -->
-            <div id="search">
-                <input id="searchBar" type="search" placeholder="Search...">
-                <label for="searchBar">
-                    <img src="images/iconos/lupa.png" alt="">
-                </label>
-
-            </div>
-        </nav>
+            </section>
 
 
-        <!-- LATERAL DISPLAY -->
-        <nav id="cuentaLateral">
-            
-            <input type="checkbox" id="check">
-            
-            <ul>
-                <!-- 3 rayas del laterañ display -->
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
+            <li id="loggin"><a href="loggin.html">Login</a></li>
+            <li id="logout"><a href="error.html">Logout</a></li>
+        </ul>
+    </nav>
 
-                <!-- Contenido/EDITAR -->
+    <!-- ASIDE -->
+    <aside>
+        <!-- TOP SEMANAL -->
+        <ul>
+            <h3>Top Semanal</h3>
 
-                    <!-- Avatar -->
-                <section class="avatar">
-                    <p>Kai</p>
-                    <img src="images/iconos/userAvatar.jpg" alt="">
-                </section>
+            <!-- Corona -->
+            <img id="corona" src="images/iconos/topcrownAmarillo.png" alt="">
 
-                <li><a href="error.html">Perfil</a></li>
-                <li><a href="error.html">Biblioteca</a></li>
-                <li><a href="error.html">Privacy Policy</a></li>
-                <li><a href="error.html">User Setings</a></li>
-                <section id="opcionMovil">
-                    <li><a href="error.html">Populares</a></li>
-                    <li><a href="error.html">Nuevos</a></li>
-                    <li><a href="error.html">Géneros</a></li>
-                    <li><a href="error.html">Noticias </a></li>
-                </section>
+            <li>
+                <a id="textoTop" href="">Top 1</a>
+                <a href="mangas/berserk/front.html">
+                    <img id="top1" src="images/portadas/berserk.jpg" alt="">
+                </a>
+            </li>
 
-                
-                <li id="loggin"><a href="loggin.html">Login</a></li>
-                <li id="logout"><a href="error.html">Logout</a></li>
-            </ul>
-        </nav>
+            <li>
+                <a id="textoTop" href="">Top 2</a>
+                <a href="">
+                    <img id="top2" src="images/portadas/fire-punch.jpg" alt="">
+                </a>
+            </li>
 
-        <!-- ASIDE -->
-        <aside>
-            <!-- TOP SEMANAL -->
-            <ul>
-                <h3>Top Semanal</h3>
+            <li>
+                <a id="textoTop" href="">Top 3</a>
+                <a href="">
+                    <img id="top3" src="images/portadas/solo-leveling.jpg" alt="">
+                </a>
+            </li>
 
-                <!-- Corona -->
-                <img id="corona" src="images/iconos/topcrownAmarillo.png" alt="">
+            <li>
+                <a id="textoTop" href="">Top 4</a>
+                <a href="">
+                    <img id="top" src="images/portadas/spy-x-family.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 1</a>
-                    <a href = "mangas/berserk/front.html">
-                        <img id="top1" src="images/portadas/berserk.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 5</a>
+                <a href="">
+                    <img id="top" src="images/portadas/naruto.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 2</a>
-                    <a href = "">
-                        <img id="top2" src="images/portadas/fire-punch.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 6</a>
+                <a href="">
+                    <img id="top" src="images/portadas/komi-san-wa-komyushou-desu.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 3</a>
-                    <a href = "">
-                        <img id="top3" src="images/portadas/solo-leveling.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 7</a>
+                <a href="">
+                    <img id="top" src="images/portadas/iron-ladies.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 4</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/spy-x-family.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 8</a>
+                <a href="">
+                    <img id="top" src="images/portadas/fullmetal-alchemist.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 5</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/naruto.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 9</a>
+                <a href="">
+                    <img id="top" src="images/portadas/gokurakugai.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 6</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/komi-san-wa-komyushou-desu.jpg" alt="">
-                    </a>
-                </li>
-
-                <li>
-                    <a id="textoTop"   href="">Top 7</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/iron-ladies.jpg" alt="">
-                    </a>
-                </li>
-
-                <li>
-                    <a id="textoTop"   href="">Top 8</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/fullmetal-alchemist.jpg" alt="">
-                    </a>
-                </li>
-
-                <li>
-                    <a id="textoTop"   href="">Top 9</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/gokurakugai.jpg" alt="">
-                    </a>
-                </li>
-
-                <li>
-                    <a id="textoTop"   href="">Top 10</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/freaks.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 10</a>
+                <a href="">
+                    <img id="top" src="images/portadas/freaks.jpg" alt="">
+                </a>
+            </li>
 
 
-            </ul>
+        </ul>
 
 
 
-            <!-- TOP MENSUAL -->
-            <ul>
-                <h3>Top Mensual</h3>
+        <!-- TOP MENSUAL -->
+        <ul>
+            <h3>Top Mensual</h3>
 
-                <!-- Corona -->
-                <img id="corona" src="images/iconos/topcrownAmarillo.png" alt="">
+            <!-- Corona -->
+            <img id="corona" src="images/iconos/topcrownAmarillo.png" alt="">
 
-                <li>
-                    <a id="textoTop"   href="">Top 1</a>
-                    <a href = "mangas/berserk/front.html">
-                        <img id="top1" src="images/portadas/berserk.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 1</a>
+                <a href="mangas/berserk/front.html">
+                    <img id="top1" src="images/portadas/berserk.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 2</a>
-                    <a href = "">
-                        <img id="top2" src="images/portadas/fire-punch.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 2</a>
+                <a href="">
+                    <img id="top2" src="images/portadas/fire-punch.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 3</a>
-                    <a href = "">
-                        <img id="top3" src="images/portadas/solo-leveling.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 3</a>
+                <a href="">
+                    <img id="top3" src="images/portadas/solo-leveling.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 4</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/spy-x-family.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 4</a>
+                <a href="">
+                    <img id="top" src="images/portadas/spy-x-family.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 5</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/naruto.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 5</a>
+                <a href="">
+                    <img id="top" src="images/portadas/naruto.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 6</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/komi-san-wa-komyushou-desu.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 6</a>
+                <a href="">
+                    <img id="top" src="images/portadas/komi-san-wa-komyushou-desu.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 7</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/iron-ladies.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 7</a>
+                <a href="">
+                    <img id="top" src="images/portadas/iron-ladies.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 8</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/fullmetal-alchemist.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 8</a>
+                <a href="">
+                    <img id="top" src="images/portadas/fullmetal-alchemist.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 9</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/gokurakugai.jpg" alt="">
-                    </a>
-                </li>
+            <li>
+                <a id="textoTop" href="">Top 9</a>
+                <a href="">
+                    <img id="top" src="images/portadas/gokurakugai.jpg" alt="">
+                </a>
+            </li>
 
-                <li>
-                    <a id="textoTop"   href="">Top 10</a>
-                    <a href = "">
-                        <img id="top" src="images/portadas/freaks.jpg" alt="">
-                    </a>
-                </li>
-
-
-            </ul>
-
-        </aside>
+            <li>
+                <a id="textoTop" href="">Top 10</a>
+                <a href="">
+                    <img id="top" src="images/portadas/freaks.jpg" alt="">
+                </a>
+            </li>
 
 
+        </ul>
 
-        <!-- Main / portadas de mangas -->
-        <main>
-            <!-- 
+    </aside>
+
+
+
+    <!-- Main / portadas de mangas -->
+    <main>
+        <!-- 
                  - Border type identificator -
 
                 id="kodomo"     -para niños pequeños
@@ -325,228 +328,228 @@
                     </a>
                 </article>
              -->
-            <article id="seinen">
-                <h4>One Piece</h4>
-                <a href="mangas/one-piece/front.html">
-                    <img id="PORTADAS" src="images/portadas/one-piece.jpg" alt="" href>
-                </a>
-            </article>
-            
-            <article id="shojo">
-                <h4>Berserk</h4>
-                <a href="mangas/berserk/front.html">
-                    <img id="PORTADAS" src="images/portadas/berserk.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>One Piece</h4>
+            <a href="mangas/one-piece/front.html">
+                <img id="PORTADAS" src="images/portadas/one-piece.jpg" alt="" href>
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Houseki no Kuni</h4>
-                <a href="mangas/houseki-no-kuni/front.html">
-                    <img id="PORTADAS" src="images/portadas/houseki-no-kuni.jpg" alt="">
-                </a>
-            </article>
+        <article id="shojo">
+            <h4>Berserk</h4>
+            <a href="mangas/berserk/front.html">
+                <img id="PORTADAS" src="images/portadas/berserk.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="shounen">
-                <h4>Black Butler</h4>
-                <a href="mangas/black-butler/front.html">
-                    <img id="PORTADAS" src="images/portadas/black-butler.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Houseki no Kuni</h4>
+            <a href="mangas/houseki-no-kuni/front.html">
+                <img id="PORTADAS" src="images/portadas/houseki-no-kuni.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Iron Ladies</h4>
-                <a href="mangas/iron-ladies/front.html">
-                    <img id="PORTADAS" src="images/portadas/iron-ladies.jpg" alt="">
-                </a>
-            </article>
+        <article id="shounen">
+            <h4>Black Butler</h4>
+            <a href="mangas/black-butler/front.html">
+                <img id="PORTADAS" src="images/portadas/black-butler.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Tsuyokute New Saga</h4>
-                <a href="mangas/tsuyokute-new-saga/front.html">
-                    <img id="PORTADAS" src="images/portadas/tsuyokute-new-saga.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Iron Ladies</h4>
+            <a href="mangas/iron-ladies/front.html">
+                <img id="PORTADAS" src="images/portadas/iron-ladies.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="kodomo">
-                <h4>Spy x Family </h4>
-                <a href="mangas/spy-x-family/front.html">
-                    <img id="PORTADAS" src="images/portadas/spy-x-family.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Tsuyokute New Saga</h4>
+            <a href="mangas/tsuyokute-new-saga/front.html">
+                <img id="PORTADAS" src="images/portadas/tsuyokute-new-saga.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Chainsaw Man</h4>
-                <a href="mangas/chainsaw-man/front.html">
-                    <img id="PORTADAS" src="images/portadas/chainsaw-man.jpg" alt="">
-                </a>
-            </article>
+        <article id="kodomo">
+            <h4>Spy x Family </h4>
+            <a href="mangas/spy-x-family/front.html">
+                <img id="PORTADAS" src="images/portadas/spy-x-family.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Black Clover</h4>
-                <a href="mangas/black-clover/front.html">
-                    <img id="PORTADAS" src="images/portadas/black-clover.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Chainsaw Man</h4>
+            <a href="mangas/chainsaw-man/front.html">
+                <img id="PORTADAS" src="images/portadas/chainsaw-man.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Crunch</h4>
-                <a href="mangas/crunch/front.html">
-                    <img id="PORTADAS" src="images/portadas/crunch.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Black Clover</h4>
+            <a href="mangas/black-clover/front.html">
+                <img id="PORTADAS" src="images/portadas/black-clover.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Fire Punch</h4>
-                <a href="mangas/fire-punch/front.html">
-                    <img id="PORTADAS" src="images/portadas/fire-punch.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Crunch</h4>
+            <a href="mangas/crunch/front.html">
+                <img id="PORTADAS" src="images/portadas/crunch.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="josei">
-                <h4>Ayanashi</h4>
-                <a href="mangas/ayanashi/front.html">
-                    <img id="PORTADAS" src="images/portadas/ayanashi.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Fire Punch</h4>
+            <a href="mangas/fire-punch/front.html">
+                <img id="PORTADAS" src="images/portadas/fire-punch.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Bleach</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/bleach.jpg" alt="">
-                </a>
-            </article>
-            
-            <article id="seinen">
-                <h4>Gokurakugai</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/gokurakugai.jpg" alt="">
-                </a>
-            </article>
+        <article id="josei">
+            <h4>Ayanashi</h4>
+            <a href="mangas/ayanashi/front.html">
+                <img id="PORTADAS" src="images/portadas/ayanashi.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Full Metal Alchemist</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/fullmetal-alchemist.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Bleach</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/bleach.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Naruto</h4>
-                <a href="">
-                    <img id="PORTADAS" src="images/portadas/naruto.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Gokurakugai</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/gokurakugai.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Kill The Hero</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/kill-the-hero.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Full Metal Alchemist</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/fullmetal-alchemist.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Iron Ladies: Saint Tooka</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/iron-ladies:-saint-tooka.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Naruto</h4>
+            <a href="">
+                <img id="PORTADAS" src="images/portadas/naruto.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Boku No Hero Academia</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/boku-no-hero-academia.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Kill The Hero</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/kill-the-hero.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Pale Throne</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/pale-throne.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Iron Ladies: Saint Tooka</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/iron-ladies:-saint-tooka.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Crimson Grimoire</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/crimson-grimoire.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Boku No Hero Academia</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/boku-no-hero-academia.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Dr. Stone</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/dr-stone.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Pale Throne</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/pale-throne.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Gokutei Higuma</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/gokutei-higuma.jpg" alt="">
-                </a>
-            </article>
+        <article id="seinen">
+            <h4>Crimson Grimoire</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/crimson-grimoire.jpg" alt="">
+            </a>
+        </article>
 
-            <article id="seinen">
-                <h4>Isekai Tensei Soudouki</h4>
-                <a href="mangas/">
-                    <img id="PORTADAS" src="images/portadas/isekai-tensei-soudouki.jpg" alt="">
-                </a>
-            </article>
-   
-            <!-- Pag Navigation [1][2][3]... -->
-            <nav class="pagNavegation">
-                <ul>
-                    <li><a href="index.html">1</a></li>
-                    <li><a href="error.html">2</a></li>
-                    <li><a href="">3</a></li>
-                </ul>
-            </nav>
+        <article id="seinen">
+            <h4>Dr. Stone</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/dr-stone.jpg" alt="">
+            </a>
+        </article>
 
-        </main>
+        <article id="seinen">
+            <h4>Gokutei Higuma</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/gokutei-higuma.jpg" alt="">
+            </a>
+        </article>
+
+        <article id="seinen">
+            <h4>Isekai Tensei Soudouki</h4>
+            <a href="mangas/">
+                <img id="PORTADAS" src="images/portadas/isekai-tensei-soudouki.jpg" alt="">
+            </a>
+        </article>
+
+        <!-- Pag Navigation [1][2][3]... -->
+        <nav class="pagNavegation">
+            <ul>
+                <li id="actualPage"><a href="index.html">1</a></li>
+                <li><a href="error.html">2</a></li>
+                <li><a href="error.html">3</a></li>
+            </ul>
+        </nav>
+
+    </main>
 
 
-        <!-- Footer pag sim -->
-        <footer>
-            <article id="website">
-                <h4>Website</h4>
-                <ul>
-                    <li><a href="footerContent/aboutUs.html">Sobre nosotros</a></li>
-                    <li><a href="error.html">Nuestros servicios</a></li>
-                    <li><a href="error.html">Politica de privacidad</a></li>
-                </ul>
-            </article>
+    <!-- Footer pag sim -->
+    <footer>
+        <article id="website">
+            <h4>Website</h4>
+            <ul>
+                <li><a href="footerContent/aboutUs.html">Sobre nosotros</a></li>
+                <li><a href="error.html">Nuestros servicios</a></li>
+                <li><a href="error.html">Politica de privacidad</a></li>
+            </ul>
+        </article>
 
-            <article id="explorar">
-                <h4>Exploral</h4>
-                <ul>
-                    <li><a href="error.html">Biblioteca</a></li>
-                    <li><a href="error.html">Grupos</a></li>
-                    <li><a href="error.html">returns</a></li>
-                    <li><a href="error.html">order status</a></li>
-                </ul>
-            </article>
-            
-            <article id="siguenos">
-                <h4>Siguenos</h4>
-                <a href="https://www.facebook.com/profile.php?id=100091992384516"><img src="images/iconos/facebookIcon.png" alt=""></a>
-                <a href="https://twitter.com/mangakwy"><img src="images/iconos/twitterIcon.png" alt=""></a>
-                <a href="https://www.instagram.com/mangakwy/    "><img src="images/iconos/InstagramIcon.png" alt=""></a>
-                <a href="https://discord.gg/4bwycKyXnw"><img src="images/iconos/discrodIcon.png" alt=""></a>
-            </article>
+        <article id="explorar">
+            <h4>Exploral</h4>
+            <ul>
+                <li><a href="error.html">Biblioteca</a></li>
+                <li><a href="error.html">Grupos</a></li>
+            </ul>
+        </article>
 
-            <article id="contenido">
-                <h4>Contenidos</h4>
-                <p>
-                    MangaK no realiza las traducciones aquí publicadas y solo es un repositorio con visor propio para que se puedan leer de forma comoda las obras.
-                </p>
-            </article>
-            <!-- copyright -->
-            <article id="copyright">&copy; 2022 MangaK</article>
+        <article id="siguenos">
+            <h4>Siguenos</h4>
+            <a href="https://www.facebook.com/profile.php?id=100091992384516"><img src="images/iconos/facebookIcon.png"
+                    alt=""></a>
+            <a href="https://twitter.com/mangakwy"><img src="images/iconos/twitterIcon.png" alt=""></a>
+            <a href="https://www.instagram.com/mangakwy/    "><img src="images/iconos/InstagramIcon.png" alt=""></a>
+            <a href="https://discord.gg/4bwycKyXnw"><img src="images/iconos/discrodIcon.png" alt=""></a>
+        </article>
 
-        </footer>
-    </body>
+        <article id="contenido">
+            <h4>Contenidos</h4>
+            <p>
+                MangaK no realiza las traducciones aquí publicadas y solo es un repositorio con visor propio para que se
+                puedan leer de forma comoda las obras.
+            </p>
+        </article>
+        <!-- copyright -->
+        <article id="copyright">&copy; 2022 MangaK</article>
 
-    <!--  
+    </footer>
+</body>
+
+<!--  
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⣿⣿⣿⣿⣿⡏⠉⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿
@@ -561,4 +564,5 @@
 ⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣿⣿
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿
      -->
+
 </html>

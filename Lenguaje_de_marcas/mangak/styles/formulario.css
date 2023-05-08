@@ -20,6 +20,15 @@ body {
     ;
 }
 
+.contenedor a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contenedor a:hover {
+    text-decoration: underline;
+}
+
 h1 {
     text-align: center;
 }
@@ -105,6 +114,7 @@ input:focus:valid {
 #username:focus:valid,
 #email:focus:valid,
 #password:focus:valid {
+    background-color:white;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Check_green_icon.svg/2048px-Check_green_icon.svg.png);
     background-repeat: no-repeat;
     background-size: 10%;
@@ -115,6 +125,7 @@ input:focus:valid {
 #username:focus:invalid,
 #email:focus:invalid,
 #password:focus:invalid {
+    background-color: white;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cross_red_circle.svg/2048px-Cross_red_circle.svg.png);
     background-repeat: no-repeat;
     background-size: 10%;
@@ -158,6 +169,7 @@ input:focus:valid {
 
 
 #textoFormulario {
+    margin-top: 10px;
     text-align: center;
 }
 
@@ -179,7 +191,11 @@ input:focus:valid {
 
 #notificacionTexto {
     margin: 10px;
-
     float: left;
+}
 
+#tycTexto {
+    position: relative;
+    left: 23px;
+    top: -20px;
 }
