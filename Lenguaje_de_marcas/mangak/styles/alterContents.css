@@ -1,6 +1,6 @@
 
 
-.aboutUs section {
+#main section {
     background-color: white;
     float: right;
     width: 75%;
@@ -22,3 +22,9 @@
     float: left;
     text-align: justify;
 }
+
+.termsAndCondition section p {
+    font-size: 15px;
+    margin-bottom: 10PX;
+}
+
