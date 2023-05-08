@@ -1,0 +1,241 @@
+1.Dado el siguiente método
+
+[METODO EN JAVA]
+
+
+(a) Indica que es la complejidad ciclomática de McCabe - su significado - rango aceptable y las fórmulas fdisponibles para calcularla(1.5)
+
+    La complejidad ciclomática de McCabe es una medida que se utiliza para
+    determinar la complejidad de un programa en función del número de caminos
+    independientes que hay en su grafo de control. Cuanto mayor es la complejidad
+    ciclomática, más complejo es el programa.
+
+    El rango aceptable de complejidad ciclomática depende del contexto del programa
+    y de la experiencia del desarrollador. En general, se considera que una complejidad
+    ciclomática de hasta 10 es fácil de entender, de 10 a 20 es moderadamente compleja
+    y más de 20 es muy compleja.
+
+    Existen tres fórmulas para calcular la complejidad ciclomática: la fórmula básica
+    que consiste en contar el número de regiones en el grafo de control y sumar 1, la
+    fórmula que utiliza el número de nodos (N) y aristas (E) del grafo de control, y
+    la fórmula que utiliza el número de puntos de decisión (D) y el número de puntos
+    de entrada (E) del grafo de control.
+
+
+(b) Obten el grafo de control del método main dado (2.5)
+    ---------------------------------
+
+(c) Calcula la complejidad ciclomática de McCabe con las 3 fórnulas para el grafo de control del método main dado (1.5)
+
+    Podemos utilizar las tres fórmulas diferentes para calcular la complejidad ciclomática de McCabe del grafo de control del método main:
+
+    Fórmula 1:
+    V(G) = E - N + 2
+    Donde V(G) es la complejidad ciclomática, E es el número de arcos y N es el número de nodos.
+
+    En el grafo de control del método main, tenemos:
+
+    Nodos: 11
+    Arcos: 12
+    Por lo tanto:
+    V(G) = E - N + 2
+    V(G) = 12 - 11 + 2
+    V(G) = 3
+
+    La complejidad ciclomática de McCabe del método main utilizando la fórmula 1 es 3.
+
+    Fórmula 2:
+    V(G) = P + 1
+    Donde V(G) es la complejidad ciclomática y P es el número de predicados (condiciones) en el grafo.
+
+    En el grafo de control del método main, tenemos 2 predicados:
+
+    El primer predicado es la condición del while1, que verifica si numero es mayor que 0.
+    El segundo predicado es la condición del while2, que verifica si numero es mayor que 0.
+    Por lo tanto:
+    V(G) = P + 1
+    V(G) = 2 + 1
+    V(G) = 3
+
+    La complejidad ciclomática de McCabe del método main utilizando la fórmula 2 es 3.
+
+    Fórmula 3:
+    V(G) = C + 1
+    Donde V(G) es la complejidad ciclomática y C es el número de componentes conexos (regiones) en el grafo.
+
+    En el grafo de control del método main, tenemos 2 componentes conexos:
+
+    El primer componente conexo es el camino que va desde el nodo Inicio hasta el nodo While1.
+    El segundo componente conexo es el camino que va desde el nodo While2 hasta el nodo Fin.
+    Por lo tanto:
+    V(G) = C + 1
+    V(G) = 2 + 1
+    V(G) = 3
+
+    La complejidad ciclomática de McCabe del método main utilizando la fórmula 3 es 3.
+
+    En conclusión, utilizando cualquiera de las tres fórmulas, la complejidad ciclomática de McCabe del método main es 3.
+
+(d) Calcula los caminos basicos del Grafo de Control por los 2 métodos simlificado (0.75) y general (0.75)
+
+    Para calcular los caminos básicos del Grafo de Control podemos
+    utilizar dos métodos: el simplificado y el general.
+
+    El método simplificado consiste en identificar todos los ciclos
+    y calcular un camino básico para cada uno de ellos. Para ello,
+    se deben seguir las siguientes reglas:
+
+    Se identifican los ciclos en el grafo.
+    Se elige un nodo de inicio para cada ciclo y se recorre elciclo una vez.
+    Se agregan los nodos que no pertenecen a ningún ciclo a uno de
+    los caminos básicos de los ciclos que los contienen.
+
+    Para el grafo de control del método main que hemos estado utilizando,
+    se identifican los siguientes ciclos:
+
+    Ciclo 1: 4, 5, 6, 7, 8
+    Ciclo 2: 12, 13, 14
+    Utilizando el método simplificado, se obtienen los siguientes caminos básicos:
+
+    Camino 1: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 14
+    Camino 2: 1, 2, 3, 4, 5, 6, 7, 11, 14
+    Camino 3: 1, 2, 3, 4, 5, 6, 12, 13, 14
+    
+    El método general consiste en construir una tabla que muestra todos los caminos posibles a través del grafo. Para ello, se deben
+    seguir los siguientes pasos:
+
+    Se enumeran todos los nodos del grafo.
+    Se construye una tabla con una fila para cada nodo y una columna para cada arco que conecta dos nodos.
+    Se marca con una "X" en la tabla los arcos que pertenecen a cada camino básico.
+    Se eliminan las filas que no tienen ninguna "X".
+    Se unen las "X" de cada fila para formar los caminos básicos.
+    Aplicando el método general al grafo de control del método main, se obtiene la siguiente tabla:
+
+    Nodo	1	2	3	4	5	6	7	8	9	10	11	12	13	14
+    1	    X													
+    2	    X	X	X											
+    3	    X													
+    4		    X		X										
+    5		    X		X	X	X								
+    6		    X			X		X	X						
+
+
+(e) Obten la tanbla de cadenas DU para las variables del método main dado (0.75)
+
+    Variable "s" de tipo Scanner:
+
+        - Definición: Se crea un objeto de la clase Scanner para leer la entrada del usuario a través de la consola.
+        - Uso: Se utiliza para leer el número introducido por el usuario.
+    
+    Variable "numeroIntroducido" de tipo int:
+
+        - Definición: Se declara e inicializa una variable de tipo entero que almacena el número introducido por el usuario.
+        - Uso: Se utiliza para guardar el número introducido por el usuario y para hacer operaciones matemáticas con él.
+    
+    Variable "numero" de tipo int:
+
+        - Definición: Se declara e inicializa una variable de tipo entero que almacena el valor de "numeroIntroducido".
+        - Uso: Se utiliza para guardar el valor original del número introducido por el usuario.
+    
+    Variable "volteado" de tipo int:
+
+        - Definición: Se declara e inicializa una variable de tipo entero que almacena el número volteado, sin ceros ni ochos.
+        - Uso: Se utiliza para guardar el número volteado y modificado, sin ceros ni ochos.
+    
+    Variable "numeroComido" de tipo boolean:
+
+        - Definición: Se declara e inicializa una variable de tipo boolean que indica si el número ha sido comido por el gusano numérico.
+        - Uso: Se utiliza para guardar el valor de verdad sobre si el número ha sido comido por el gusano numérico.
+    
+    
+    En resumen, la tabla de cadenas DU quedaría así:
+     _______________________________________________________________________________________________________
+    | Variable	            |Definición	                                |       Uso                         |
+    |.......................|...........................................|...................................|
+    | s   	                |Se crea un objeto de la clase Scanner      |Se utiliza para leer el número     |
+    |                       |para leer la entrada del usuario a través  |introducido por el usuario.        |
+    |                       |de la consola.                             |                                   |
+    |_______________________|___________________________________________|__________________________________ |
+    | numeroIntroducido	    |Se declara e inicializa una variable de    |Se utiliza para guardar el         | 
+    |                       |tipo entero que almacena el número         |número introducido por el          | 
+    |                       |introducido por el usuario.                |usuario y para hacer               |
+    |                       |                                           |operaciones matemáticas con él.    |
+    |_______________________|___________________________________________|__________________________________ |
+    | numero                |Se declara e inicializa una variable de    |Se utiliza para guardar el valor   |
+    |                       |tipo entero que almacena el valor de       |original del número introducido    |
+    |                       |"numeroIntroducido".                       |por el usuario.                    |
+    |_______________________|___________________________________________|__________________________________ |
+    | volteado              |Se declara e inicializa una variable de    |Se utiliza para guardar el         |
+    |                       |tipo entero que almacena el número         |número volteado y modificado,      |
+    |_______________________|___________________________________________|__________________________________ |
+    |                       |volteado, sin ceros ni ochos.              |sin ceros ni ochos.                |
+    | numeroComido          |Se declara e inicializa una variable de    |Se utiliza para guardar el valor   |
+    |                       |tipo boolean que indica si el número ha    |de verdad sobre si el número ha    |
+    |                       |sido comido por el gusano numérico.        |sido comido por el gusano numérico.|
+    |_______________________|___________________________________________|___________________________________|
+
+
+    
+(f) Obtén los minimos caminos para la Cadena DU de la variable mumero junto con valores de entrado casos de prueba correspondientes
+
+
+
+2.Obten las clases equivalentes y tablas de prebas para el formulario  1er Paso de Solicitud de IMV donde te solicitarán los siguientes
+  datos de entrada: (1.5)
+
+    Provincia que serña una de kas 50 provincias o 2 ciudades autónomas
+    Numero de integrantes de la ciudad - como máximo 10
+    Residentes de forma legal desde hace un año: S/N
+
+    Para obtener las clases equivalentes y la tabla de pruebas para el formulario 1er Paso
+    de Solicitud de IMV, se puede utilizar el criterio de partición de equivalencia, que
+    consiste en dividir el conjunto de posibles valores de entrada en grupos o clases de
+    equivalencia y luego diseñar casos de prueba que cubran cada clase.
+
+    A continuación, se presenta una posible división en clases de equivalencia para cada uno de los datos de entrada:
+
+        Provincia: Se pueden considerar dos clases de equivalencia: las provincias y las ciudades autónomas.
+            - Clase 1: Provincias (50 opciones)
+            - Clase 2: Ciudades autónomas (2 opciones)
+        Número de integrantes de la familia: Se pueden considerar tres clases de equivalencia:
+        números negativos, números entre 0 y 10 (ambos inclusive), y números mayores que 10.
+            - Clase 1: Números negativos (-infinito a -1)
+            - Clase 2: Números entre 0 y 10 (0 a 10)
+            - Clase 3: Números mayores que 10 (11 a infinito)
+        Residentes de forma legal desde hace un año: Se pueden considerar dos clases de equivalencia: sí y no.
+            - Clase 1: Sí (S)
+            - Clase 2: No (N)
+
+        Para cada combinación de clases de equivalencia, se deben diseñar casos de prueba que cubran todas
+        las posibles situaciones. Por ejemplo, para la combinación de clases 1-2-1 (provincia ciudad
+        autónoma - número de integrantes entre 0 y 10 - residente legal desde hace un año), se podría
+        diseñar un caso de prueba con los siguientes valores:
+
+            - Provincia: Ceuta
+            - Número de integrantes: 5
+            - Residente legal desde hace un año: Sí
+
+        De esta manera, se deben diseñar casos de prueba para cada una de las combinaciones posibles de
+        clases de equivalencia, asegurando una cobertura completa del conjunto de valores de entrada posibles.
+
+     ____________________________________________________________________________
+    | # | Provincia	            | Número de integrantes	    |Residentes legales  |
+    |...|.......................|...........................|....................|
+    | 1 | Provincia válida	    | Número válido	            |Residente legal     |
+    |___|_______________________|___________________________|____________________|
+    | 2 | Provincia válida	    | Número válido	            |No residente legal  |
+    |___|_______________________|___________________________|____________________|
+    | 3 | Provincia válida	    | Número inválido	        |Residente legal     |
+    |___|_______________________|___________________________|____________________|
+    | 4 | Provincia válida	    | Número inválido	        |No residente legal  |
+    |___|_______________________|___________________________|____________________|
+    | 5 | Provincia inválida	| Número válido	            |Residente legal     |
+    |___|_______________________|___________________________|____________________|
+    | 6 | Provincia inválida	| Número válido	            |No residente legal  |
+    |___|_______________________|___________________________|____________________|
+    | 7 | Provincia inválida	| Número inválido	        |Residente legal     |
+    |___|_______________________|___________________________|____________________|
+    | 8 | Provincia inválida	| Número inválido	        |No residente legal  |
+    |___|_______________________|___________________________|____________________|
+
+
