@@ -482,6 +482,10 @@ main article {
     padding: auto;
 }
 
+#actualPage {
+    background-color: #ee436d;
+}
+
 
 #PORTADAS {
     width: 100%;
