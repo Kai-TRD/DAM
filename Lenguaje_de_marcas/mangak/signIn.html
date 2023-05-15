@@ -17,14 +17,14 @@
 
     <!-- Titulo / header -->
     <header>
-        <h1 id="inicioPagina" class="neonText"><a href="index.html">Sign In</a></h1>
+        <h1 id="inicioPagina" class="neonText"><a href="index.html">SignIn</a></h1>
         <p>"Crea perfil en la pagina"</p>
     </header>
 
 
     <div class="contenedor">
         <h1>Registrarse</h1>
-        <form action="/registro">
+        <form action="/registro" novalidate>
 
             <!-- nombre usuario -->
 
@@ -60,24 +60,34 @@
             <p class="aviso" id="avisoPasswordRepit">Repita la contraseña introducida</p>
 
             <div>
-                <input type="checkbox" name="notificacion" id="notificacion">
+                <input type="checkbox" name="notificacion" id="notification">
                 <p id="notificacionTexto">Recibir notificaciones de Mangak</p>
             </div>
             <div>
                 <input type="checkbox" name="notificacion" id="tyc">
-                <p id="tycTexto">He leido y aceptado los <a href="footerContent/termsAndCondition.html">terminos y condiciones</a>
+                <p id="tycTexto">He leido y aceptado los <a href="footerContent/termsAndCondition.html">terminos y
+                        condiciones</a>
                 </p>
             </div>
 
-            <!-- Boton de regustro -->
-            <input type="submit" value="Registrarse">
+            <!-- Boton de registro -->
+            <input type="submit">
         </form>
         <p id="textoFormulario">¿Ya tienes cuenta? <a id="loggin" href="loggin.html">Inicia sesión</a></p>
     </div>
 
+    <article class="valido">
+        <article>
+            <h1>Registro completado</h1>
+            <p>El usuario <span id="nombreUsuario"></span> se registró de forma correcta.</p>
+            <p id="jsonContainer"></p>
+        </article>
+
+    </article>
+      
 
 
-
+    <script src="js/signIn.js"></script>
 
 
 
