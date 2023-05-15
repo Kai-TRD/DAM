@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             tyc: tycCheckbox,
         };
 
-        !alert(prueba)
+        // alert(prueba)
 
         var prueba = JSON.stringify(account);
         document.getElementById('jsonContainer').textContent = prueba;
