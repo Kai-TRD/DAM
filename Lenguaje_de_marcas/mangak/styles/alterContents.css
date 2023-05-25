@@ -23,8 +23,11 @@
     text-align: justify;
 }
 
-.termsAndCondition section p {
-    font-size: 15px;
-    margin-bottom: 10PX;
+.termsAndCondition h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
 }
 
+.termsAndCondition article {
+    width: 100%;
+}
