@@ -200,6 +200,12 @@ input:focus:valid {
     top: -20px;
 }
 
+#recuerdame {
+    position: relative;
+    left: 23px;
+    top: -20px;
+}
+
 
 .valido {
 
