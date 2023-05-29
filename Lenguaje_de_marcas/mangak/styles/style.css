@@ -127,8 +127,6 @@ header img {
 
 }
 
-
-
 /**Navegación**/
 #mainNav {
     text-align: center;
@@ -213,9 +211,6 @@ header img {
     display: block;
 }
 
-
-
-
 /* BARRA DE BUSQUEDA */
 #search {
     position: absolute;
@@ -244,7 +239,6 @@ header img {
     bottom: -3px;
     cursor: pointer;
 }
-
 
 /* AVATAR */
 .avatar img {
@@ -277,7 +271,6 @@ header img {
 
 }
 
-
 /* LATERAL DISPLAY */
 
 #opcionMovil {
@@ -308,8 +301,6 @@ label i:hover {
     z-index: 4;
 
 }
-
-
 
 #cuentaLateral {
     float: left;
@@ -432,9 +423,6 @@ aside ul li {
     border: 3px solid #ff8001;
 }
 
-
-
-
 /**Main**/
 main {
     float: left;
@@ -443,7 +431,6 @@ main {
     padding: 19px;
     padding-right: 10px;
 }
-
 
 /* cada manga */
 main article {
@@ -454,7 +441,6 @@ main article {
     width: 233px;
     border-radius: 3%;
 }
-
 
 /* Navegacion de pagina */
 .pagNavegation {
@@ -486,11 +472,9 @@ main article {
     background-color: #ee436d;
 }
 
-
 #PORTADAS {
     width: 100%;
 }
-
 
 main article h4 {
     width: 233px;
@@ -528,14 +512,6 @@ main article h4 {
         0 0 10px #69ff6e,
         inset 0 0 20px #69ff6e;
     } */
-
-
-
-
-
-
-
-
 
 /**FOOTER**/
 footer {
@@ -614,7 +590,6 @@ footer article ul li {
     position: absolute;
     text-align: center;
 }
-
 
 /* ----------------------TABLET / PORTATIL---------------------- */
 
@@ -798,7 +773,6 @@ footer article ul li {
         border-bottom-right-radius: 10px;
     }
 
-
     /* Main Tablet */
     main {
         margin: 0;
@@ -864,8 +838,6 @@ footer article ul li {
 
 }
 
-
-
 /* ----------------------MOVILES---------------------- */
 
 @media only screen and (max-width: 500px) {
@@ -884,11 +856,6 @@ footer article ul li {
         top: 0;
         background-color: #ff6565;
     }
-
-
-
-
-
 
     label i {
         font-size: 150%;

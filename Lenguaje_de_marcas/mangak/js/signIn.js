@@ -52,16 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
             email: email,
             password: password,
             // notification: false,
-            tyc: tycCheckbox,
+            // tyc: tycCheckbox,
         };
 
         // alert(prueba)
 
         var prueba = JSON.stringify(account);
         document.getElementById('jsonContainer').textContent = prueba;
-
-
-        
 
         nombreUsuarioElemento.textContent = username;
         var elementoValido = document.querySelector('.valido');
